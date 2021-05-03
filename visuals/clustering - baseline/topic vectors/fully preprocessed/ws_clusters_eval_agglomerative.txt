@@ -1,0 +1,320 @@
+Topic 1
+screen feature fact part seat thing phone place way control 
+Topic 2
+lot something mean fun drive time speed twin moment engine 
+intrinsic evaluation
+c_v score: 0.33
+nmpi score: 0.11802
+extrinsic evaluation
+c_v score: 0.59
+nmpi score: -0.86172
+dbs score: : 1.88
+
+
+
+Topic 1
+lot something mean fun drive time speed twin moment engine 
+Topic 2
+control screen command gesture phone part touch driver function voice 
+Topic 3
+hook carry square lip problem capacity load seat boot back 
+Topic 4
+please click verdict list consider egg reckon wow content share 
+intrinsic evaluation
+c_v score: 0.57
+nmpi score: 0.27098
+extrinsic evaluation
+c_v score: 0.57
+nmpi score: -0.87141
+dbs score: : 1.33
+
+
+
+Topic 1
+grip speed response power slip traction gearbox mode drive quicker 
+Topic 2
+brand lot day time sale moment something mean opportunity audi 
+Topic 3
+hook carry square lip problem capacity load seat boot back 
+Topic 4
+please click verdict list consider egg reckon wow content share 
+Topic 5
+side mirror assistance collision airbags detection surround assistant view package 
+Topic 6
+command screen phone voice touch thing use operate gesture control 
+intrinsic evaluation
+c_v score: 0.64
+nmpi score: 0.28801
+extrinsic evaluation
+c_v score: 0.56
+nmpi score: -0.89878
+dbs score: : 1.45
+
+
+
+Topic 1
+hook carry square lip problem capacity load seat boot back 
+Topic 2
+side mirror assistance collision airbags detection surround assistant view package 
+Topic 3
+lot moment day week petrol month time amount thio tank 
+Topic 4
+brand competitor sale everybody platform future product market wagon something 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+command screen phone voice touch thing use operate gesture control 
+Topic 7
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 8
+please click verdict list consider egg reckon wow content share 
+intrinsic evaluation
+c_v score: 0.6
+nmpi score: 0.1928
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.86339
+dbs score: : 1.38
+
+
+
+Topic 1
+side mirror assistance collision airbags detection surround assistant view package 
+Topic 2
+petrol amount hybrid tank mile lot motorway engine range work 
+Topic 3
+command screen phone voice touch thing use operate gesture control 
+Topic 4
+brand competitor sale everybody platform future product market wagon something 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+square hook capacity lip item boot storage area shelf socket 
+Topic 7
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 8
+please click verdict list consider egg reckon wow content share 
+Topic 9
+room head adult knee headroom seat kid back leg comfy 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+intrinsic evaluation
+c_v score: 0.58
+nmpi score: 0.15969
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.84663
+dbs score: : 1.37
+
+
+
+Topic 1
+petrol amount hybrid tank mile lot motorway engine range work 
+Topic 2
+phone thing command everything way touch place screen kind part 
+Topic 3
+assistance collision detection assistant airbags assist safety view cruise reverse 
+Topic 4
+brand competitor sale everybody platform future product market wagon something 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+square hook capacity lip item boot storage area shelf socket 
+Topic 7
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 8
+please click verdict list consider egg reckon wow content share 
+Topic 9
+room head adult knee headroom seat kid back leg comfy 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+Topic 11
+pipe vent skirt bumper tail spoiler grill light mirror effect 
+Topic 12
+swivel dial satnav voice screen menu command gesture entertainment use 
+intrinsic evaluation
+c_v score: 0.55
+nmpi score: 0.11248
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.82842
+dbs score: : 1.52
+
+
+
+Topic 1
+hybrid mass kilo girl energy model direction boat hell lot 
+Topic 2
+glove bin ambient operate touch phone match satin part screen 
+Topic 3
+assistance collision detection assistant airbags assist safety view cruise reverse 
+Topic 4
+brand competitor sale everybody platform future product market wagon something 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+petrol mile mpg gallon hour diesel engine tank motorway economy 
+Topic 7
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 8
+please click verdict list consider egg reckon wow content share 
+Topic 9
+room head adult knee headroom seat kid back leg comfy 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+Topic 11
+pipe vent skirt bumper tail spoiler grill light mirror effect 
+Topic 12
+swivel dial satnav voice screen menu command gesture entertainment use 
+Topic 13
+square hook capacity lip item boot storage area shelf socket 
+Topic 14
+way thing everything finger command profile phone heat station summer 
+intrinsic evaluation
+c_v score: 0.54
+nmpi score: 0.05934
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.83653
+dbs score: : 1.7
+
+
+
+Topic 1
+brand competitor sale everybody platform future product market wagon something 
+Topic 2
+ambient operate color dash sunroof center counter plastic match touch 
+Topic 3
+assistance collision detection assistant airbags assist safety view cruise reverse 
+Topic 4
+job step girl kilo hybrid region energy machine fifty difference 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+petrol mile mpg gallon hour diesel engine tank motorway economy 
+Topic 7
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 8
+please click verdict list consider egg reckon wow content share 
+Topic 9
+room head adult knee headroom seat kid back leg comfy 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+Topic 11
+pipe vent skirt bumper tail spoiler grill light mirror effect 
+Topic 12
+swivel dial satnav voice screen menu command gesture entertainment use 
+Topic 13
+square hook capacity lip item boot storage area shelf socket 
+Topic 14
+way thing everything finger command profile phone heat station summer 
+Topic 15
+cable jag tesla order boat truck cut production floor thought 
+Topic 16
+bin glove bottle holder cup device import storage water size 
+intrinsic evaluation
+c_v score: 0.51
+nmpi score: 0.06427
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.82916
+dbs score: : 1.58
+
+
+
+Topic 1
+assistance collision detection assistant airbags assist safety view cruise reverse 
+Topic 2
+competitor land answer luxury brand coop crossover value mid coupe 
+Topic 3
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 4
+platform sale siri year everybody future yes train group predecessor 
+Topic 5
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 6
+petrol mile mpg gallon hour diesel engine tank motorway economy 
+Topic 7
+way thing everything finger command profile phone heat station summer 
+Topic 8
+job step girl kilo hybrid region energy machine fifty difference 
+Topic 9
+room head adult knee headroom seat kid back leg comfy 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+Topic 11
+pipe vent skirt bumper tail spoiler grill light mirror effect 
+Topic 12
+swivel dial satnav voice screen menu command gesture entertainment use 
+Topic 13
+square hook capacity lip item boot storage area shelf socket 
+Topic 14
+ambient counter hey temperature operate passenger backwards sunroof function reef 
+Topic 15
+cable jag tesla order boat truck cut production floor thought 
+Topic 16
+bin glove bottle holder cup device import storage water size 
+Topic 17
+please click verdict list consider egg reckon wow content share 
+Topic 18
+plastic dash material quality instrument trim design shame touch interior 
+intrinsic evaluation
+c_v score: 0.51
+nmpi score: 0.06155
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.82038
+dbs score: : 1.65
+
+
+
+Topic 1
+litre cylinder engine twin turbo lag power acceleration output horsepower 
+Topic 2
+detection collision assistance safety airbags assistant assist cruise view departure 
+Topic 3
+grip suspension damper slip steering roll bump traction stability firm 
+Topic 4
+platform sale siri year everybody future yes train group predecessor 
+Topic 5
+competitor land luxury answer product rover suv count value segment 
+Topic 6
+petrol mile mpg gallon hour diesel engine tank motorway economy 
+Topic 7
+way thing everything finger command profile phone heat station summer 
+Topic 8
+job step girl kilo hybrid region energy machine fifty difference 
+Topic 9
+display navigation audio speaker surround gauge radio cockpit sound backup 
+Topic 10
+yesterday supercars week today engineering tomorrow lady month online thank 
+Topic 11
+pipe vent skirt bumper tail spoiler grill light mirror effect 
+Topic 12
+swivel dial satnav voice screen menu command gesture entertainment use 
+Topic 13
+square hook capacity lip item boot storage area shelf socket 
+Topic 14
+ambient counter hey temperature operate passenger backwards sunroof function reef 
+Topic 15
+cable jag tesla order boat truck cut production floor thought 
+Topic 16
+bin glove bottle holder cup device import storage water size 
+Topic 17
+please click verdict list consider egg reckon wow content share 
+Topic 18
+plastic dash material quality instrument trim design shame touch interior 
+Topic 19
+room head adult knee headroom seat kid back leg comfy 
+Topic 20
+com tfl check coupe heck silver news dot coop watching 
+intrinsic evaluation
+c_v score: 0.52
+nmpi score: 0.07295
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.80554
+dbs score: : 1.67
+
+
+

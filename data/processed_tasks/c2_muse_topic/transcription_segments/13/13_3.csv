@@ -1,0 +1,6 @@
+start,end,segment_id,word
+90160,90360,3,It's
+90360,90840,3,quick
+90940,91140,3,but
+91140,91879,3,expensive
+91879,91880,3,.

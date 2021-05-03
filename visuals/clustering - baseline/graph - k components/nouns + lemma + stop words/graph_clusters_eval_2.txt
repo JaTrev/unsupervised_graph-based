@@ -1,0 +1,82 @@
+Topic 1
+second cylinder motor acceleration load city turbo twin horsepower clutch 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+Topic 1
+cylinder motor acceleration second turbo city twin horsepower clutch load 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+Topic 1
+cylinder city second acceleration clutch turbo twin motor horsepower petrol 
+Topic 2
+touch apple display screen navigation system interior 
+Topic 3
+channel deal click dot please thanks share series video money 
+Topic 4
+child load fit stuff fact problem area head size place 
+intrinsic evaluation
+c_v score: 0.59
+nmpi score: 0.26
+extrinsic evaluation
+c_v score: 0.47
+nmpi score: -0.24
+dbs score: : 0.61
+
+
+
+Topic 1
+acceleration city second cylinder turbo twin horsepower performance petrol speed 
+Topic 2
+fit child load stuff head problem place room sit size 
+Topic 3
+click channel deal please dot thanks share series video 
+intrinsic evaluation
+c_v score: 0.59
+nmpi score: 0.31
+extrinsic evaluation
+c_v score: 0.43
+nmpi score: -0.33
+dbs score: : 0.51
+
+
+
+Topic 1
+city second acceleration twin cylinder horsepower performance turbo clutch number 
+Topic 2
+deal channel share click please dot thanks series video 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+

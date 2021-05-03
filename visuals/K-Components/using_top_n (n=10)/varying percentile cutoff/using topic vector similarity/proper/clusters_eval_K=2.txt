@@ -1,0 +1,194 @@
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.021351
+number of nodes: 101
+
+
+
+Topic 1
+engines litre horsepower turbo liter seconds engine 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.020595
+number of nodes: 133
+
+
+
+Topic 1
+gallon diesel petrol economy miles seconds fuel hour 
+Topic 2
+comfort suspension sport corners steering feel 
+Topic 3
+turbo twin cylinder litre torque engines horsepower acceleration seconds engine 
+Topic 4
+room roof back headroom seat head seats floor 
+Topic 5
+climate part touch buttons ways center dash controls press view 
+Topic 6
+hand entertainment information screen pop review 
+intrinsic evaluation
+c_v score: 0.79
+nmpi score: 0.33
+u_mass score: -2.02
+extrinsic evaluation
+c_v score: 0.64
+nmpi score: 0.06
+u_mass score: -4.17
+dbs score: : 0.8
+
+execution time: 0.034989
+number of nodes: 156
+
+
+
+Topic 1
+hand entertainment information screen pop review 
+Topic 2
+view climate features touch part ways center dash buttons feature 
+Topic 3
+track sport steering corners feels modes changes comfort feel air 
+Topic 4
+engines turbo seconds litre cylinder horsepower liter twin engine torque 
+intrinsic evaluation
+c_v score: 0.67
+nmpi score: 0.25
+u_mass score: -2.69
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.11
+u_mass score: -6.12
+dbs score: : 0.68
+
+execution time: 0.073859
+number of nodes: 169
+
+
+
+Topic 1
+features instance climate part ways view touch feature press look 
+Topic 2
+track feels sport feel air changes corners end comfort steering 
+Topic 3
+engines turbo seconds litre cylinder horsepower liter twin engine torque 
+Topic 4
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.27
+u_mass score: -2.52
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.23
+u_mass score: -9.61
+dbs score: : 0.56
+
+execution time: 0.155485
+number of nodes: 180
+
+
+
+Topic 1
+sense course bit way driver lot face something vehicle brakes 
+Topic 2
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.468920
+number of nodes: 196
+
+
+
+Topic 1
+channel thanks share video dot please wow money 
+Topic 2
+sense bit course way driver lot face vehicle something feature 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.839107
+number of nodes: 207
+
+
+
+Topic 1
+course face lot vehicle sense way driver bit experience world 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 2.671925
+number of nodes: 213
+
+
+
+Topic 1
+well let course face lot sense vehicle driver way bit 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 8.363775
+number of nodes: 221
+
+
+
+Topic 1
+well let course anything lot face vehicle sense driver way 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 9.883399
+number of nodes: 226
+
+
+

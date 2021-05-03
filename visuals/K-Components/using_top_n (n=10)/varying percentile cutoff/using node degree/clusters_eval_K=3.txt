@@ -1,0 +1,118 @@
+Topic 1
+touch ways part navigation seats area doors fact boot look 
+Topic 2
+seconds turbo power sport town twin torque performance comfort corners 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 9.848782
+number of nodes: 226
+
+
+
+Topic 1
+seconds turbo twin power torque performance acceleration engines engine cylinder 
+Topic 2
+ways touch navigation view area part doors screen fact head 
+Topic 3
+comfort corners changes sport track difference suspension feels brakes ride 
+intrinsic evaluation
+c_v score: 0.54
+nmpi score: 0.18
+u_mass score: -2.8
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.87
+
+execution time: 0.966484
+number of nodes: 213
+
+
+
+Topic 1
+comfort corners changes track suspension sport feels gear steering difference 
+Topic 2
+touch area doors navigation ways part fact head room climate 
+Topic 3
+seconds turbo twin torque power acceleration engines petrol miles city 
+intrinsic evaluation
+c_v score: 0.54
+nmpi score: 0.15
+u_mass score: -3.02
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.83
+
+execution time: 0.560281
+number of nodes: 187
+
+
+
+Topic 1
+seats room head headroom back roof doors seat 
+Topic 2
+seconds turbo twin torque power acceleration clutch petrol engines cylinder 
+Topic 3
+touch part ways climate buttons controls cabin 
+Topic 4
+entertainment screen hand pop information review 
+Topic 5
+comfort corners changes suspension sport modes steering 
+intrinsic evaluation
+c_v score: 0.71
+nmpi score: 0.29
+u_mass score: -2.41
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.67
+
+execution time: 0.103493
+number of nodes: 161
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.029793
+number of nodes: 109
+
+
+
+Topic 1
+seconds turbo cylinder twin litre horsepower 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.019225
+number of nodes: 58
+
+
+

@@ -1,0 +1,136 @@
+Topic 1
+seconds turbo touch corners twin torque navigation comfort ways part 
+Topic 2
+channel dot please thanks share video wow money 
+Topic 3
+lot nothing days world face vehicle version 
+intrinsic evaluation
+c_v score: 0.43
+nmpi score: 0.11
+u_mass score: -4.44
+extrinsic evaluation
+c_v score: 0.44
+nmpi score: -0.51
+u_mass score: -14.75
+dbs score: : 1.66
+
+execution time: 0.399250
+number of nodes: 171
+
+
+
+Topic 1
+seconds turbo twin torque comfort power corners changes acceleration clutch 
+Topic 2
+touch area navigation seats part room head headroom back ways 
+Topic 3
+channel dot please thanks share video wow money 
+intrinsic evaluation
+c_v score: 0.55
+nmpi score: 0.21
+u_mass score: -3.04
+extrinsic evaluation
+c_v score: 0.35
+nmpi score: -0.39
+u_mass score: -10.95
+dbs score: : 1.11
+
+execution time: 0.163435
+number of nodes: 160
+
+
+
+Topic 1
+seconds turbo twin acceleration torque cylinder litre clutch power horsepower 
+Topic 2
+corners comfort suspension changes sport response brakes track road difference 
+Topic 3
+touch navigation part buttons controls screen center ways climate hand 
+Topic 4
+area head back room roof seat headroom seats doors boot 
+Topic 5
+press place look dash button looks 
+Topic 6
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.68
+nmpi score: 0.28
+u_mass score: -2.26
+extrinsic evaluation
+c_v score: 0.46
+nmpi score: -0.23
+u_mass score: -9.18
+dbs score: : 1.06
+
+execution time: 0.051834
+number of nodes: 135
+
+
+
+Topic 1
+seconds turbo twin acceleration cylinder clutch torque petrol litre horsepower 
+Topic 2
+comfort suspension changes sport corners steering response mode ride body 
+Topic 3
+hand screen pop information entertainment review 
+Topic 4
+touch ways climate buttons controls center view part 
+Topic 50
+area head roof room headroom back seats seat holders size 
+Topic 6
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.71
+nmpi score: 0.3
+u_mass score: -2.48
+extrinsic evaluation
+c_v score: 0.49
+nmpi score: -0.18
+u_mass score: -7.3
+dbs score: : 0.74
+
+execution time: 0.029889
+number of nodes: 104
+
+
+
+Topic 1
+seconds turbo cylinder acceleration twin litre gallon engines horsepower transmission 
+Topic 2
+room headroom head back roof seat 
+Topic 3
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.82
+nmpi score: 0.41
+u_mass score: -1.55
+extrinsic evaluation
+c_v score: 0.58
+nmpi score: -0.07
+u_mass score: -8.38
+dbs score: : 0.41
+
+execution time: 0.017440
+number of nodes: 56
+
+
+
+Topic 1
+turbo seconds cylinder engines horsepower acceleration twin litre torque liter 
+Topic 2
+channel thanks dot please share video wow 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.016630
+number of nodes: 39
+
+
+

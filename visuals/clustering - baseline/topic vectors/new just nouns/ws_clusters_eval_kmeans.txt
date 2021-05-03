@@ -1,0 +1,320 @@
+Topic 1
+place climate way look side part seats nice storage screen 
+Topic 2
+cars car drive time something performance moment engine bmw audi 
+intrinsic evaluation
+c_v score: 0.45
+nmpi score: 0.14599
+extrinsic evaluation
+c_v score: 0.62
+nmpi score: -0.82584
+dbs score: : 1.83
+
+
+
+Topic 1
+storage space problem room seats floor backs items hooks boots 
+Topic 2
+controls infotainment buttons display system navigation voice menus pad screen 
+Topic 3
+engine speed gearbox mode response grip power shifts drive turbo 
+Topic 4
+brand car cars thank audi guys video thanks videos share 
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.29837
+extrinsic evaluation
+c_v score: 0.55
+nmpi score: -0.79092
+dbs score: : 1.47
+
+
+
+Topic 1
+menus pad satnav screen swivel voice commands entertainment controls functions 
+Topic 2
+suspension handling dampers grip chassis corners ride slip roll bumps 
+Topic 3
+detection assist airbags safety collision sensors assistance wipers camera cruise 
+Topic 4
+storage space room seats problem backs floor items boots hooks 
+Topic 5
+engine turbo litre cylinder seconds miles engines mpg economy liter 
+Topic 6
+brand videos car video share guys thanks audi channel thank 
+intrinsic evaluation
+c_v score: 0.74
+nmpi score: 0.34547
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.79735
+dbs score: : 1.28
+
+
+
+Topic 1
+cars guys opportunity brand tomorrow supercars yesterday day impressions month 
+Topic 2
+menus satnav swivel commands entertainment pad screen voice dolls graphics 
+Topic 3
+suspension handling dampers corners chassis ride grip slip steering roll 
+Topic 4
+engine turbo litre cylinder engines output seconds economy liter miles 
+Topic 5
+detection assist safety collision airbags assistance cruise camera wipers backup 
+Topic 6
+please enjoy click share wow content channel subscribe verdict add 
+Topic 7
+dash design events wood plastic console instance vents side lights 
+Topic 8
+storage items space boot hooks shelf square socket receipts backs 
+intrinsic evaluation
+c_v score: 0.73
+nmpi score: 0.36638
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.80856
+dbs score: : 1.29
+
+
+
+Topic 1
+guys cars opportunity brand supercars tomorrow yesterday day month ladies (General Information)
+Topic 2
+room seat headroom head child arm knee adults back comfy  (Space)
+Topic 3
+kind mirrors wheels bars way piston front tips theme alloy  (General Information)
+Topic 4
+engine turbo litre cylinder engines output liter seconds economy miles  (Performance)
+Topic 5
+detection assist safety airbags collision assistance cruise camera wipers departure (Safety)
+Topic 6
+enjoy please share click content wow channel subscribe add verdict (YouTube)
+Topic 7
+dash events design plastic materials wood plastics quality console instance (Interior Features)
+Topic 8
+items boot square lip receipts tailgate storage load shelf hooks (General Information)
+Topic 9
+suspension handling corners bumps dampers comfort steering grips town theory (Handling)
+Topic 10
+commands menus pad swivel entertainment satnav voice screen graphics functions (Infotainment)
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.3518
+extrinsic evaluation
+c_v score: 0.46
+nmpi score: -0.74243
+dbs score: : 1.49
+
+
+
+Topic 1
+turbo litre engine cylinder engines seconds twin horsepower speed power 
+Topic 2
+bins storage holders glove cup stories bottle spaces mobile bottles 
+Topic 3
+voice pad commands menus screen satnav swivel entertainment functions graphics 
+Topic 4
+room seat headroom head comfy maneuver kids adults back child 
+Topic 5
+enjoy please share add click verdict subscribe deals content logo 
+Topic 6
+suspension handling dampers corners grip bumps slip grips ride drives 
+Topic 7
+battery pure charge okay engine combustion miles motor batteries cars 
+Topic 8
+boot square lip items load receipts shelf tailgate hooks capacity 
+Topic 9
+dash events design plastic materials wood plastics quality console vents 
+Topic 10
+bmw price porsche hatchback brand tfl model check siri competitors 
+Topic 11
+detection airbags assist safety collision assistance sensors wipers side camera 
+Topic 12
+supercars yesterday guys tomorrow impressions opportunity month ladies lamborghini engineering 
+intrinsic evaluation
+c_v score: 0.69
+nmpi score: 0.33273
+extrinsic evaluation
+c_v score: 0.5
+nmpi score: -0.74963
+dbs score: : 1.5
+
+
+
+Topic 1
+supercars guys yesterday tomorrow opportunity impressions month ladies gentlemen lamborghini 
+Topic 2
+bins holders storage glove cup bottle stories spaces backs door 
+Topic 3
+side inch way tail upholstery kind lights tips set front 
+Topic 4
+litre cylinder twin turbo rpm power shifters speed highway cylinders 
+Topic 5
+detection airbags safety assist collision assistance cruise departure camera reverse 
+Topic 6
+enjoy please share add click subscribe content verdict deals logo 
+Topic 7
+dash events design wood plastic materials console plastics vents grill 
+Topic 8
+boot square lip items receipts load tailgate shelf hooks capacity 
+Topic 9
+suspension handling dampers corners grip bumps ride slip comfort steering 
+Topic 10
+commands pad swivel menus voice screen entertainment satnav graphics functions 
+Topic 11
+model porsche cars bmw group brand tesla saloon hatchback price 
+Topic 12
+room headroom seat maneuver head comfy kids back adults child 
+Topic 13
+efficiency pure kicks miles battery motor plug charge engine combustion 
+Topic 14
+diesel gallon smooth petrol economy gearbox performance engine choices mpg 
+intrinsic evaluation
+c_v score: 0.68
+nmpi score: 0.33116
+extrinsic evaluation
+c_v score: 0.49
+nmpi score: -0.73909
+dbs score: : 1.62
+
+
+
+Topic 1
+commands swivel satnav menus entertainment pad screen voice graphics gesture 
+Topic 2
+cars opportunity brand name year everybody mileage production car years 
+Topic 3
+detection airbags assist safety collision assistance cruise reverse departure view 
+Topic 4
+inch side way tail kind set tips display upholstery lights 
+Topic 5
+storage holders glove cup bins stories pocket spaces bottle space 
+Topic 6
+yesterday supercars engineering tomorrow guys race impressions lamborghini months ladies 
+Topic 7
+boot square lip items load tailgate receipts shelf opening floor 
+Topic 8
+litre cylinder twin turbo rpm power speed shifters highway cylinders 
+Topic 9
+room seat headroom head comfy maneuver adults back kids child 
+Topic 10
+petrol miles mpg diesel gallon economy engine pure mile smooth 
+Topic 11
+bumps corners suspension town comfort mode grips sports handling becomes 
+Topic 12
+chassis roll axle body dampers slip bars suspension ride springs 
+Topic 13
+dash events materials plastics design console plastic wood switches pieces 
+Topic 14
+hill victor kilometers region okay trouble combustion breaks break motor 
+Topic 15
+enjoy please share add click subscribe deals content verdict logo 
+Topic 16
+bmw price luxury value class suv model coupe porsche siri 
+intrinsic evaluation
+c_v score: 0.64
+nmpi score: 0.28882
+extrinsic evaluation
+c_v score: 0.49
+nmpi score: -0.74644
+dbs score: : 1.69
+
+
+
+Topic 1
+profile command tips set finger summer forget types friends phones 
+Topic 2
+suspension dampers handling corners bumps comfort response ride theory grip 
+Topic 3
+headlamps indicators looks grill sensors side lights spoiler pipes sides 
+Topic 4
+commands swivel satnav menus entertainment graphics pad voice screen gesture 
+Topic 5
+model tesla group porsche cars saloon bmw price panamera platform 
+Topic 6
+holders storage bins cup glove stories bottle spaces door coffee 
+Topic 7
+country hours charger job episode week motorways battery brilliant lot 
+Topic 8
+sound speakers speaker harman surround windshield standards segment sounds fire 
+Topic 9
+room headroom seat head comfy adults kids back maneuver child 
+Topic 10
+detection safety airbags collision assist assistance departure cruise children reverse 
+Topic 11
+litre turbo cylinder engines twin engine power horsepower speed cylinders 
+Topic 12
+enjoy please share add click subscribe content deals verdict logo 
+Topic 13
+check tfl roman reviews com news colorado brand world lane 
+Topic 14
+efficiency accelerator motor engine pure kicks miles petrol mpg conditions 
+Topic 15
+boot square lip items load receipts shelf tailgate hooks capacity 
+Topic 16
+supercars tomorrow guys yesterday opportunity month impressions ladies engineering race 
+Topic 17
+navigation display cockpit center gauges settings memory left gauge radio 
+Topic 18
+dash events materials plastics design quality wood console plastic switches 
+intrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.3067
+extrinsic evaluation
+c_v score: 0.5
+nmpi score: -0.71359
+dbs score: : 1.62
+
+
+
+Topic 1
+profile command set finger tips summer forget types friends phones 
+Topic 2
+suspension dampers handling corners bumps grip comfort response steering slip 
+Topic 3
+grill indicators spoiler pipes styling lights side looks exterior headlamps 
+Topic 4
+commands swivel satnav menus entertainment graphics pad voice screen gesture 
+Topic 5
+model group tesla cars porsche price bmw saloon suv performance 
+Topic 6
+storage holders bins cup glove bottle stories spaces backs pocket 
+Topic 7
+country week vehicle hours something charger lot job think episode 
+Topic 8
+sound speakers speaker harman surround windshield standards segment sounds date 
+Topic 9
+room headroom seat head adults comfy kids maneuver back child 
+Topic 10
+detection airbags collision safety assist assistance departure cruise emergency children 
+Topic 11
+litre cylinder twin turbo power rpm engine speed horsepower engines 
+Topic 12
+enjoy please share add click subscribe verdict content deals video 
+Topic 13
+tfl check roman reviews com news colorado brand lane world 
+Topic 14
+pedal region accelerator brakes pedals perfect times motor conditions combustion 
+Topic 15
+boot square lip items load receipts shelf tailgate hooks capacity 
+Topic 16
+supercars yesterday tomorrow guys opportunity month impressions ladies engineering gentlemen 
+Topic 17
+navigation display cockpit gauges dial center left gauge settings radio 
+Topic 18
+dash events materials plastics wood console design switches plastic quality 
+Topic 19
+petrol miles gallon mpg diesel economy motorway mile pure tank 
+Topic 20
+reversing reverse assistant meters hands park pillars bonnet parking person 
+intrinsic evaluation
+c_v score: 0.63
+nmpi score: 0.27624
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.749
+dbs score: : 1.67
+
+
+

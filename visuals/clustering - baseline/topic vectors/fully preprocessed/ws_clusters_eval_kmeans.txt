@@ -1,0 +1,320 @@
+Topic 1
+feature seat screen fact climate part control place backwards thing 
+Topic 2
+lot mean something time moment fun drive world sale twin 
+intrinsic evaluation
+c_v score: 0.29
+nmpi score: 0.08888
+extrinsic evaluation
+c_v score: 0.61
+nmpi score: -0.87903
+dbs score: : 1.81
+
+
+
+Topic 1
+speed power grip engine response gearbox mode drive twin cylinder 
+Topic 2
+screen control gesture command voice touch dial connectivity navigation map 
+Topic 3
+hook carry problem square boot lip adult storage seat load 
+Topic 4
+brand audi channel thanks thank tomorrow opportunity replacement competitor everybody 
+intrinsic evaluation
+c_v score: 0.52
+nmpi score: 0.12078
+extrinsic evaluation
+c_v score: 0.58
+nmpi score: -0.84594
+dbs score: : 1.31
+
+
+
+Topic 1
+command screen voice gesture pad dial touch menu simple phone 
+Topic 2
+suspension grip bump damper firm steering roll body chassis feel 
+Topic 3
+engine litre cylinder turbo twin horsepower mpg power output lag 
+Topic 4
+mirror airbags collision assistance side package detection camera parking wiper 
+Topic 5
+brand channel thanks audi thank tomorrow opportunity subscribe replacement guy 
+Topic 6
+hook carry problem square boot storage lip seat adult load 
+intrinsic evaluation
+c_v score: 0.56
+nmpi score: 0.18453
+extrinsic evaluation
+c_v score: 0.56
+nmpi score: -0.85299
+dbs score: : 1.2
+
+
+
+Topic 1
+hook square storage boot lip item socket capacity area carry 
+Topic 2
+week supercars yesterday lot month impression thank episode lady day 
+Topic 3
+cylinder engine litre turbo twin power acceleration lag horsepower output 
+Topic 4
+screen command voice dial entertainment swivel gesture menu satnav use 
+Topic 5
+seat rest head dash passenger kid leather plastic roof way 
+Topic 6
+channel money wagon group audi thanks wow bell competitor please 
+Topic 7
+grip suspension bump firm steering damper roll feel body ride 
+Topic 8
+assistance collision detection airbags safety assist cruise assistant view camera 
+intrinsic evaluation
+c_v score: 0.57
+nmpi score: 0.13168
+extrinsic evaluation
+c_v score: 0.55
+nmpi score: -0.84973
+dbs score: : 1.38
+
+
+
+Topic 1
+competitor sale brand platform product land wagon future everybody america 
+Topic 2
+design vent dash effect grill pipe bumper leather nice spoiler 
+Topic 3
+grip suspension bump damper firm steering roll body ride chassis 
+Topic 4
+collision assistance detection airbags assist safety cruise assistant wiper view 
+Topic 5
+command voice screen gesture pad dial swivel use menu map 
+Topic 6
+please verdict click egg list content consider wow reckon video 
+Topic 7
+room head adult knee seat kid headroom back leg position 
+Topic 8
+cylinder engine litre turbo acceleration power lag twin output horsepower 
+Topic 9
+hook storage square item socket boot lip capacity area carry 
+Topic 10
+week supercars yesterday month impression thio thank episode tomorrow today 
+intrinsic evaluation
+c_v score: 0.56
+nmpi score: 0.11867
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.859
+dbs score: : 1.24
+
+
+
+Topic 1
+competitor land sale platform future brand product wagon america market 
+Topic 2
+design bumper vent effect grill pipe dash skirt badge spoiler 
+Topic 3
+grip suspension damper bump steering roll firm body chassis ride 
+Topic 4
+navigation radio speedometer thes setting temperature profile summer finger wife 
+Topic 5
+command swivel voice satnav screen dial use menu entertainment gesture 
+Topic 6
+please verdict click consider wow list egg reckon content share 
+Topic 7
+room adult head seat headroom knee kid back leg position 
+Topic 8
+cylinder litre engine turbo acceleration power lag twin horsepower rpm 
+Topic 9
+hook square storage item socket boot lip capacity shelf carry 
+Topic 10
+battery petrol hour mile charge pure kilometer electricity motor range 
+Topic 11
+detection collision assistance safety airbags assist cruise assistant view anchor 
+Topic 12
+supercars yesterday week month thank tomorrow lady today film impression 
+intrinsic evaluation
+c_v score: 0.56
+nmpi score: 0.08791
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.82962
+dbs score: : 1.3
+
+
+
+Topic 1
+competitor wagon land platform brand future market sale product america 
+Topic 2
+bin holder cup storage bottle glove size device phone socket 
+Topic 3
+grip damper suspension roll steering chassis body bump spring firm 
+Topic 4
+touch radio navigation plastic leather thes switch everything center dash 
+Topic 5
+swivel satnav voice gesture command use dial screen entertainment counter 
+Topic 6
+please verdict click list wow consider content reckon egg share 
+Topic 7
+room adult head seat headroom knee kid leg back position 
+Topic 8
+town limit portion pick round distance cruiser wise keep driving 
+Topic 9
+square hook lip boot capacity item opening shelf lift stuff 
+Topic 10
+battery petrol charge mile pure hour kilometer electricity range hybrid 
+Topic 11
+collision detection assistance airbags safety assist cruise view anchor assistant 
+Topic 12
+supercars yesterday week tomorrow today lady month thank film replacement 
+Topic 13
+bumper skirt pipe badge caliper grill exhaust spoiler presence thought 
+Topic 14
+cylinder litre engine acceleration power lag twin turbo output highway 
+intrinsic evaluation
+c_v score: 0.54
+nmpi score: 0.02465
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.82342
+dbs score: : 1.49
+
+
+
+Topic 1
+check slash tfl com news gold heck silver stay coupe 
+Topic 2
+damper roll spring grip suspension chassis body ride steering ratio 
+Topic 3
+sale production year platform everybody que product company future name 
+Topic 4
+room adult head seat headroom kid knee leg back position 
+Topic 5
+swivel voice dial satnav menu command screen use gesture entertainment 
+Topic 6
+land porsche luxury competitor mid circuit panamera rover value machine 
+Topic 7
+bin holder glove storage cup bottle size device socket pocket 
+Topic 8
+square hook lip capacity boot item shelf opening lift socket 
+Topic 9
+assistance collision detection airbags assist safety view cruise assistant camera 
+Topic 10
+petrol charge mile motorway battery hour charger amount plug service 
+Topic 11
+cylinder litre engine acceleration power lag twin turbo output horsepower 
+Topic 12
+bumper skirt pipe spoiler caliper alloy tail vent light exhaust 
+Topic 13
+thes everything wife profile summer switch wood instance event finger 
+Topic 14
+yesterday supercars week tomorrow today lady month engineering film andi 
+Topic 15
+bump road job break firm fun town throw worth mode 
+Topic 16
+please verdict click list content reckon consider wow share egg 
+intrinsic evaluation
+c_v score: 0.54
+nmpi score: 0.09096
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.83338
+dbs score: : 1.55
+
+
+
+Topic 1
+bump road grip response steering fun firm town mode suspension 
+Topic 2
+room adult head seat headroom knee kid back leg position 
+Topic 3
+land competitor market future value product porsche panamera platform group 
+Topic 4
+cylinder litre acceleration power engine lag highway output twin rpm 
+Topic 5
+skirt bumper pipe spoiler caliper exhaust wider vent grill tail 
+Topic 6
+bin bottle holder storage glove cup size socket pocket bit 
+Topic 7
+square hook lip capacity boot item shelf opening socket lift 
+Topic 8
+swivel dial screen voice command menu satnav use infotainment gesture 
+Topic 9
+collision detection assistance airbags safety assist cruise view assistant anchor 
+Topic 10
+please verdict click list reckon content consider wow share egg 
+Topic 11
+course slash sedan check station heck crossover generation doubt brand 
+Topic 12
+supercars yesterday week tomorrow today month lady thank film london 
+Topic 13
+damper spring roll grip suspension body rate ratio chassis steering 
+Topic 14
+mile petrol hour engine mpg charge battery kick tank motorway 
+Topic 15
+jag cable production order tesla boat theme badge thought model 
+Topic 16
+roadster carbon chassis siri wheelbase dynamic character fiber weight core 
+Topic 17
+profile summer wife finger thes tablet scroll heat way speedometer 
+Topic 18
+dash effect plastic leather element nice quality clarity design metal 
+intrinsic evaluation
+c_v score: 0.49
+nmpi score: 0.07936
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.82578
+dbs score: : 1.67
+
+
+
+Topic 1
+town bump response road grip mode fun firm steering benefit 
+Topic 2
+navigation display center climate layout cockpit gauge radio audio leather 
+Topic 3
+land competitor future porsche market value panamera product group platform 
+Topic 4
+cylinder acceleration litre power engine highway lag twin rpm output 
+Topic 5
+bumper skirt pipe spoiler exhaust caliper count wider vent design 
+Topic 6
+bin bottle holder glove storage cup size bit box socket 
+Topic 7
+square hook lip capacity boot item shelf opening socket storage 
+Topic 8
+swivel dial satnav command voice menu screen use gesture entertainment 
+Topic 9
+collision detection assistance airbags safety assist view cruise anchor assistant 
+Topic 10
+please verdict click list content reckon consider wow share egg 
+Topic 11
+slash tfl check brand news com heck utility wagon answer 
+Topic 12
+yesterday supercars week tomorrow today month film lady engineering thank 
+Topic 13
+damper roll spring grip suspension body steering rate ratio chassis 
+Topic 14
+mile petrol hour charge battery mpg engine kick motorway range 
+Topic 15
+jag cable production tesla order thought badge boat theme model 
+Topic 16
+wheelbase chassis siri roadster weight carbon dynamic character core kilo 
+Topic 17
+profile summer wife finger thes heat everything tablet tip scroll 
+Topic 18
+dash effect element metal quality nice clarity feel plastic design 
+Topic 19
+massage light program book console move generation seater backseat unit 
+Topic 20
+room adult head headroom seat knee kid back leg comfy 
+intrinsic evaluation
+c_v score: 0.52
+nmpi score: 0.07418
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.81473
+dbs score: : 1.66
+
+
+

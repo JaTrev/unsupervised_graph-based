@@ -1,0 +1,134 @@
+Topic 1
+features climate part ways touch view look press dash feature 
+Topic 2
+track sport corners changes comfort steering feels modes suspension feel 
+Topic 3
+engines turbo seconds litre cylinder horsepower liter twin engine torque 
+Topic 4
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.71
+nmpi score: 0.26
+u_mass score: -2.57
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.18
+u_mass score: -8.98
+dbs score: : 0.53
+
+execution time: 0.381558
+number of nodes: 171
+
+
+
+Topic 1
+sport comfort steering changes response modes corners suspension mode ride 
+Topic 2
+engines litre seconds turbo cylinder horsepower liter engine twin economy 
+Topic 3
+room headroom roof back seat head seats doors area floor 
+Topic 4
+touch ways part controls cabin climate buttons card color center 
+Topic 5
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.3
+u_mass score: -2.34
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.11
+u_mass score: -8.95
+dbs score: : 0.53
+
+execution time: 0.123583
+number of nodes: 160
+
+
+
+Topic 1
+gallon diesel petrol miles economy seconds hour 
+Topic 2
+turbo twin cylinder litre torque horsepower engines acceleration power seconds 
+Topic 3
+comfort sport suspension steering corners changes response feel 
+Topic 4
+hand entertainment information screen pop review 
+Topic 5
+touch buttons ways controls climate part center navigation 
+Topic 6
+room headroom seat head roof back seats doors floor window 
+Topic 7
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.79
+nmpi score: 0.36
+u_mass score: -1.98
+extrinsic evaluation
+c_v score: 0.55
+nmpi score: -0.07
+u_mass score: -6.72
+dbs score: : 0.74
+
+execution time: 0.051739
+number of nodes: 135
+
+
+
+Topic 1
+gallon diesel petrol miles economy seconds hour (Performance)
+Topic 2
+turbo twin cylinder litre torque horsepower acceleration power engines city  (Performance)
+Topic 3
+room seat headroom roof head back seats (Passenger Space)
+Topic 4
+channel video please thanks dot share wow (YouTube)
+intrinsic evaluation
+c_v score: 0.84
+nmpi score: 0.42
+u_mass score: -1.56
+extrinsic evaluation
+c_v score: 0.63
+nmpi score: 0.0
+u_mass score: -6.5
+dbs score: : 0.61
+
+execution time: 0.035760
+number of nodes: 104
+
+
+
+Topic 1
+cylinder turbo litre twin horsepower engines seconds torque acceleration 
+Topic 2
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.018492
+number of nodes: 56
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.016678
+number of nodes: 39
+
+
+

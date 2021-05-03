@@ -1,0 +1,204 @@
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.021351
+number of nodes: 101
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.020595
+number of nodes: 133
+
+
+
+Topic 1
+diesel gallon economy petrol miles fuel seconds 
+Topic 2
+litre cylinder horsepower engines turbo seconds liter twin 
+Topic 3
+hand entertainment information screen pop review 
+Topic 4
+touch ways buttons controls climate part cabin 
+intrinsic evaluation
+c_v score: 0.73
+nmpi score: 0.36
+u_mass score: -2.05
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: 0.04
+u_mass score: -5.13
+dbs score: : 0.92
+
+execution time: 0.034989
+number of nodes: 156
+
+
+
+Topic 1
+room seat headroom roof head back seats 
+Topic 2
+engines litre seconds turbo horsepower cylinder liter twin engine economy 
+Topic 3
+touch buttons ways controls climate part color cabin navigation 
+Topic 4
+hand entertainment information screen pop review 
+intrinsic evaluation
+c_v score: 0.72
+nmpi score: 0.33
+u_mass score: -2.0
+extrinsic evaluation
+c_v score: 0.61
+nmpi score: -0.0
+u_mass score: -5.36
+dbs score: : 0.68
+
+execution time: 0.073859
+number of nodes: 169
+
+
+
+Topic 1
+room seat headroom head roof back seats doors 
+Topic 2
+engines seconds litre turbo horsepower cylinder liter engine twin economy 
+Topic 3
+hand entertainment information screen pop review 
+Topic 4
+touch ways controls buttons navigation part color cabin climate apple 
+intrinsic evaluation
+c_v score: 0.73
+nmpi score: 0.32
+u_mass score: -2.09
+extrinsic evaluation
+c_v score: 0.55
+nmpi score: -0.04
+u_mass score: -6.05
+dbs score: : 0.72
+
+execution time: 0.155485
+number of nodes: 180
+
+
+
+Topic 1
+instance features look view climate feature dash press part touch 
+Topic 2
+engines seconds turbo litre horsepower cylinder liter engine twin economy 
+Topic 3
+comfort sport suspension corners ride steering track changes feels feel 
+intrinsic evaluation
+c_v score: 0.64
+nmpi score: 0.24
+u_mass score: -2.39
+extrinsic evaluation
+c_v score: 0.6
+nmpi score: -0.02
+u_mass score: -7.59
+dbs score: : 0.54
+
+execution time: 0.468920
+number of nodes: 196
+
+
+
+Topic 1
+sport comfort corners track steering suspension changes ride response modes 
+Topic 2
+features instance climate view look part feature press ways dash 
+Topic 3
+engines seconds turbo litre horsepower cylinder liter engine twin torque 
+intrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.21
+u_mass score: -3.1
+extrinsic evaluation
+c_v score: 0.59
+nmpi score: -0.24
+u_mass score: -10.16
+dbs score: : 0.53
+
+execution time: 0.839107
+number of nodes: 207
+
+
+
+Topic 1
+features instance climate view look press part feature ways dash 
+Topic 2
+sport track corners comfort changes steering suspension ride response modes 
+Topic 3
+engines seconds turbo litre horsepower cylinder liter engine twin torque 
+intrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.21
+u_mass score: -3.06
+extrinsic evaluation
+c_v score: 0.59
+nmpi score: -0.24
+u_mass score: -10.09
+dbs score: : 0.53
+
+execution time: 2.671925
+number of nodes: 213
+
+
+
+Topic 1
+engines seconds turbo litre horsepower cylinder liter engine twin torque 
+Topic 2
+features instance climate view look part touch ways press dash 
+Topic 3
+sport track corners comfort feels town changes difference ride suspension 
+Topic 4
+lot nothing world face vehicle days 
+intrinsic evaluation
+c_v score: 0.55
+nmpi score: 0.18
+u_mass score: -3.0
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.28
+u_mass score: -10.67
+dbs score: : 0.69
+
+execution time: 8.363775
+number of nodes: 221
+
+
+
+Topic 1
+features instance climate look part ways press touch dash feature 
+Topic 2
+weight brakes gearbox town speed level mode option acceleration experience 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 9.883399
+number of nodes: 226
+
+
+

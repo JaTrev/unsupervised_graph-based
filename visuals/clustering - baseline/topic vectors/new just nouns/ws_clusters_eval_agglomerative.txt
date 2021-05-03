@@ -1,0 +1,320 @@
+Topic 1
+screen entertainment menus phone place information voice storage extra glove 
+Topic 2
+car cars something kind thing drive time bit way line 
+intrinsic evaluation
+c_v score: 0.34
+nmpi score: 0.16862
+extrinsic evaluation
+c_v score: 0.64
+nmpi score: -0.86777
+dbs score: : 1.9
+
+
+
+Topic 1
+storage practicality detail stories items socket space boot spaces size 
+Topic 2
+feel way front bit side thing something steering body wheel 
+Topic 3
+voice navigation pad apple system carplay gesture screens screen display 
+Topic 4
+cars car performance time audi engine turbo drive moment years 
+intrinsic evaluation
+c_v score: 0.59
+nmpi score: 0.26693
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.79154
+dbs score: : 1.96
+
+
+
+Topic 1
+cars car performance time audi engine turbo drive moment years 
+Topic 2
+back side way sensors sides view pillar window lights vents 
+Topic 3
+voice navigation pad apple system carplay gesture screens screen display 
+Topic 4
+storage items stories space socket backs boot spaces size receipts 
+Topic 5
+enjoy please click share add verdict deals subscribe content video 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+intrinsic evaluation
+c_v score: 0.62
+nmpi score: 0.28314
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.80416
+dbs score: : 1.63
+
+
+
+Topic 1
+cars car time performance audi day moment years drive something 
+Topic 2
+back sensors side rear pillar view way sides children front 
+Topic 3
+voice navigation pad apple system carplay gesture screens screen display 
+Topic 4
+storage items stories space socket backs boot spaces size receipts 
+Topic 5
+enjoy please click share add verdict deals subscribe content video 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 8
+dash events design materials plastic
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.3209
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.79103
+dbs score: : 1.66
+
+
+
+Topic 1
+voice navigation pad apple system carplay gesture screens screen display 
+Topic 2
+back sensors side rear pillar view way sides children front 
+Topic 3
+miles petrol engine cars pure car mpg kicks something diesel 
+Topic 4
+storage items stories space socket backs boot spaces size receipts 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 8
+dash events design materials plastic wood console quality interior trim 
+Topic 9
+performance porsche bmw price cars panamera prices siri model mean 
+Topic 10
+enjoy please click share add verdict deals subscribe content video 
+intrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.2954
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.77729
+dbs score: : 1.71
+
+
+
+Topic 1
+storage items stories space socket backs boot spaces size receipts 
+Topic 2
+back way front roof rear maneuver seats pillar side room 
+Topic 3
+miles petrol engine cars pure car mpg kicks something diesel 
+Topic 4
+navigation display radio gauges temperature settings ambient set screens cockpit 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 8
+dash events design materials plastic wood console quality interior trim 
+Topic 9
+performance porsche bmw price cars panamera prices siri model mean 
+Topic 10
+enjoy please click share add verdict deals subscribe content video 
+Topic 11
+commands swivel menus pad voice entertainment satnav graphics infotainment screen 
+Topic 12
+detection view reverse collision assist safety cruise camera airbags assistant 
+intrinsic evaluation
+c_v score: 0.68
+nmpi score: 0.32335
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.76378
+dbs score: : 1.74
+
+
+
+Topic 1
+miles petrol engine cars pure car mpg kicks something diesel 
+Topic 2
+navigation display radio gauges temperature settings ambient set screens cockpit 
+Topic 3
+front back mirrors way roof rear side sides spoiler kind 
+Topic 4
+performance porsche bmw price cars panamera prices siri model mean 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 8
+dash events design materials plastic wood console quality interior trim 
+Topic 9
+bins storage holders glove cup stories bottle spaces backs size 
+Topic 10
+enjoy please click share add verdict deals subscribe content video 
+Topic 11
+commands swivel menus pad voice entertainment satnav graphics infotainment screen 
+Topic 12
+detection view reverse collision assist safety cruise camera airbags assistant 
+Topic 13
+boot square lip items load floor tailgate receipts hooks shelf 
+Topic 14
+room seat adults headroom head support comfy kids leg child 
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.34286
+extrinsic evaluation
+c_v score: 0.5
+nmpi score: -0.76402
+dbs score: : 1.69
+
+
+
+Topic 1
+performance porsche bmw price cars panamera prices siri model mean 
+Topic 2
+miles kicks pure engine petrol plug battery efficiency hybrid combustion 
+Topic 3
+front back mirrors way roof rear side sides spoiler kind 
+Topic 4
+display navigation cockpit gauges radio memory speaker settings center temperature 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+car cars gearboxes dde gearbox days perfect work idea lots 
+Topic 8
+dash events design materials plastic wood console quality interior trim 
+Topic 9
+bins storage holders glove cup stories bottle spaces backs size 
+Topic 10
+enjoy please click share add verdict deals subscribe content video 
+Topic 11
+commands swivel menus pad voice entertainment satnav graphics infotainment screen 
+Topic 12
+detection view reverse collision assist safety cruise camera airbags assistant 
+Topic 13
+boot square lip items load floor tailgate receipts hooks shelf 
+Topic 14
+room seat adults headroom head support comfy kids leg child 
+Topic 15
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 16
+command finger profile phones tips screens set friends summer recognition 
+intrinsic evaluation
+c_v score: 0.65
+nmpi score: 0.31968
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.77061
+dbs score: : 1.78
+
+
+
+Topic 1
+miles kicks pure engine petrol plug battery efficiency hybrid combustion 
+Topic 2
+display navigation cockpit gauges radio memory speaker settings center temperature 
+Topic 3
+car cars gearboxes dde gearbox days perfect work idea lots 
+Topic 4
+pull way front pillar brake case rear belt trouble back 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 7
+panamera circuit porsche mean amg performance sort product estate ton 
+Topic 8
+bmw price class value com luxury dot siri course lexus 
+Topic 9
+bins storage holders glove cup stories bottle spaces backs size 
+Topic 10
+enjoy please click share add verdict deals subscribe content video 
+Topic 11
+commands swivel menus pad voice entertainment satnav graphics infotainment screen 
+Topic 12
+detection view reverse collision assist safety cruise camera airbags assistant 
+Topic 13
+boot square lip items load floor tailgate receipts hooks shelf 
+Topic 14
+room seat adults headroom head support comfy kids leg child 
+Topic 15
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 16
+command finger profile phones tips screens set friends summer recognition 
+Topic 17
+dash events design materials plastic wood console quality interior trim 
+Topic 18
+spoiler mirrors indicators sides badge lights jag tail alloy pipes 
+intrinsic evaluation
+c_v score: 0.62
+nmpi score: 0.28825
+extrinsic evaluation
+c_v score: 0.52
+nmpi score: -0.78116
+dbs score: : 1.85
+
+
+
+Topic 1
+suspension handling corners dampers ride grip bumps slip grips steering 
+Topic 2
+display navigation cockpit gauges radio memory speaker settings center temperature 
+Topic 3
+detection view reverse collision assist safety cruise camera airbags assistant 
+Topic 4
+pull way front pillar brake case rear belt trouble back 
+Topic 5
+yesterday guys supercars tomorrow ladies gentlemen impressions opportunity audi month 
+Topic 6
+combustion kicks battery plug charge motor hybrid pure efficiency miles 
+Topic 7
+panamera circuit porsche mean amg performance sort product estate ton 
+Topic 8
+bmw price class value com luxury dot siri course lexus 
+Topic 9
+bins storage holders glove cup stories bottle spaces backs size 
+Topic 10
+idea change service night car someone lots times driver motorways 
+Topic 11
+commands swivel menus pad voice entertainment satnav graphics infotainment screen 
+Topic 12
+gearboxes thought gts gearbox god supercar pick experience lamborghini face 
+Topic 13
+boot square lip items load floor tailgate receipts hooks shelf 
+Topic 14
+room seat adults headroom head support comfy kids leg child 
+Topic 15
+litre cylinder twin rpm turbo power speed shifters engines horsepower 
+Topic 16
+command finger profile phones tips screens set friends summer recognition 
+Topic 17
+dash events design materials plastic wood console quality interior trim 
+Topic 18
+spoiler mirrors indicators sides badge lights jag tail alloy pipes 
+Topic 19
+gallon miles petrol diesel economy mpg mile fast diesels choice 
+Topic 20
+enjoy please click share add verdict deals subscribe content video 
+intrinsic evaluation
+c_v score: 0.61
+nmpi score: 0.27314
+extrinsic evaluation
+c_v score: 0.51
+nmpi score: -0.75643
+dbs score: : 1.86
+
+
+

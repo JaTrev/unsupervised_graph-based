@@ -1,0 +1,72 @@
+Topic 1
+please share video channel detail clutch gallon thanks turbo seconds 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+Topic 1
+display cylinder gallon battery range litre room turbo shift hand 
+Topic 2
+vehicle face lot version nothing days world 
+Topic 3
+please thanks share video channel wow dot money 
+intrinsic evaluation
+c_v score: 0.47
+nmpi score: 0.07
+u_mass score: -5.37
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 1.65
+
+
+
+Topic 1
+gallon transmission litre seconds horsepower turbo engines cylinder liter acceleration 
+Topic 2
+sport response suspension comfort changes corners mode ride steering body 
+Topic 3
+entertainment hand screen pop review information 
+Topic 4
+buttons ways controls touch climate view center part 
+Topic 5
+problem room space headroom seat back head area roof holders 
+Topic 6
+channel please thanks share video dot wow 
+intrinsic evaluation
+c_v score: 0.73
+nmpi score: 0.31
+u_mass score: -2.41
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.74
+
+
+
+Topic 1
+horsepower cylinder turbo engines twin seconds litre liter 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+execution time: 0.01
+number of nodes: 36

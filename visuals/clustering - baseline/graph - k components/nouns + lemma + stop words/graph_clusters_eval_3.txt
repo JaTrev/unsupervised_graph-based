@@ -1,0 +1,92 @@
+Topic 1
+second cylinder motor acceleration city turbo twin horsepower clutch torque 
+Topic 2
+click deal channel dot information please share thanks series video 
+Topic 3
+load child fact fit problem head area stuff size seat 
+intrinsic evaluation
+c_v score: 0.58
+nmpi score: 0.31
+extrinsic evaluation
+c_v score: 0.45
+nmpi score: -0.47
+dbs score: : 0.63
+
+
+
+Topic 1
+click channel deal dot please share thanks series video money 
+Topic 2
+load child fact fit stuff problem area seat size head 
+Topic 3
+grip gear shift break response traction mode 
+Topic 4
+cylinder motor acceleration second turbo city twin horsepower clutch petrol 
+intrinsic evaluation
+c_v score: 0.58
+nmpi score: 0.28
+extrinsic evaluation
+c_v score: 0.43
+nmpi score: -0.41
+dbs score: : 0.67
+
+
+
+Topic 1
+child load fit stuff fact problem area size space roof 
+Topic 2
+child load head seat room sit position 
+Topic 3
+cylinder city second acceleration clutch turbo twin motor horsepower petrol 
+Topic 4
+grip gear shift break response traction mode 
+Topic 5
+channel deal click dot please thanks share series video money 
+intrinsic evaluation
+c_v score: 0.59
+nmpi score: 0.27
+extrinsic evaluation
+c_v score: 0.43
+nmpi score: -0.38
+dbs score: : 0.98
+
+
+
+Topic 1
+child load head room sit seat 
+Topic 2
+acceleration city second cylinder turbo twin horsepower performance speed clutch 
+Topic 3
+click channel deal please dot thanks share series 
+intrinsic evaluation
+c_v score: 0.63
+nmpi score: 0.34
+extrinsic evaluation
+c_v score: 0.42
+nmpi score: -0.43
+dbs score: : 0.36
+
+
+
+Topic 1
+deal channel share please dot thanks 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+

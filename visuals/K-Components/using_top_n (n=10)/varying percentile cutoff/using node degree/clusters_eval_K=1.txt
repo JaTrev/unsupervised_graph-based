@@ -1,0 +1,122 @@
+Topic 1
+touch ways seconds turbo part view power sport town twin 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 9.848782
+number of nodes: 226
+
+
+
+Topic 1
+ways seconds touch turbo twin navigation power view torque area 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.966484
+number of nodes: 213
+
+
+
+Topic 1
+seconds touch turbo twin torque area comfort corners doors navigation 
+Topic 2
+channel dot please thanks share video wow money 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.560281
+number of nodes: 187
+
+
+
+Topic 1
+seconds turbo twin torque comfort power corners changes acceleration clutch 
+Topic 2
+touch part area navigation ways seats room head headroom back 
+Topic 3
+channel dot please thanks share video wow money 
+intrinsic evaluation
+c_v score: 0.55
+nmpi score: 0.21
+u_mass score: -2.99
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 1.11
+
+execution time: 0.103493
+number of nodes: 161
+
+
+
+Topic 1
+seconds turbo twin acceleration cylinder clutch torque petrol litre horsepower 
+Topic 2
+comfort suspension changes corners sport steering response mode ride body 
+Topic 3
+touch ways climate center buttons controls view part side 
+Topic 4
+hand screen pop information entertainment review 
+Topic 5
+area head roof room headroom back seats seat holders size 
+Topic 6
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.71
+nmpi score: 0.3
+u_mass score: -2.4
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.76
+
+execution time: 0.029793
+number of nodes: 109
+
+
+
+Topic 1
+seconds turbo cylinder acceleration twin litre horsepower torque clutch gallon 
+Topic 2
+room headroom head back roof seat 
+Topic 3
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.82
+nmpi score: 0.41
+u_mass score: -1.57
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.41
+
+execution time: 0.019225
+number of nodes: 58
+
+
+

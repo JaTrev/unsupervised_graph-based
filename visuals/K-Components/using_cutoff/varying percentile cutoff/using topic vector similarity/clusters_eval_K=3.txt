@@ -1,0 +1,116 @@
+Topic 1
+room back seat roof seats headroom head doors area points 
+Topic 2
+hand entertainment information screen pop review 
+Topic 3
+engines turbo seconds litre horsepower cylinder liter twin engine economy 
+Topic 4
+response steering sport comfort changes modes track corners suspension mode 
+intrinsic evaluation
+c_v score: 0.77
+nmpi score: 0.33
+u_mass score: -2.1
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.08
+u_mass score: -6.84
+dbs score: : 0.49
+
+execution time: 0.381558
+number of nodes: 171
+
+
+
+Topic 1
+room seat headroom head roof back seats doors 
+Topic 2
+turbo twin cylinder litre horsepower torque engines acceleration power seconds 
+Topic 3
+hand entertainment information screen pop review 
+Topic 4
+touch ways buttons climate controls part 
+Topic 5
+sport comfort steering corners suspension changes modes 
+intrinsic evaluation
+c_v score: 0.76
+nmpi score: 0.31
+u_mass score: -2.26
+extrinsic evaluation
+c_v score: 0.56
+nmpi score: 0.02
+u_mass score: -4.52
+dbs score: : 0.59
+
+execution time: 0.123583
+number of nodes: 160
+
+
+
+Topic 1
+room headroom seat roof head back 
+Topic 2
+diesel gallon petrol economy miles seconds 
+Topic 3
+twin turbo cylinder litre torque horsepower engines acceleration power seconds 
+Topic 4
+touch ways buttons climate controls part 
+intrinsic evaluation
+c_v score: 0.79
+nmpi score: 0.36
+u_mass score: -1.93
+extrinsic evaluation
+c_v score: 0.68
+nmpi score: 0.17
+u_mass score: -3.43
+dbs score: : 0.65
+
+execution time: 0.051739
+number of nodes: 135
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.035760
+number of nodes: 104
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.018492
+number of nodes: 56
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.016678
+number of nodes: 39
+
+
+

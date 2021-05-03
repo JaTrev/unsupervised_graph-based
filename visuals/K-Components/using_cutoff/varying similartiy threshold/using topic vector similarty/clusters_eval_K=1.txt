@@ -1,0 +1,72 @@
+Topic 1
+well let course lot face vehicle reason sense world driver 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+Topic 1
+sense bit way feature driver button tires side view part 
+Topic 2
+nothing lot world days face vehicle version 
+Topic 3
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.46
+nmpi score: 0.17
+u_mass score: -3.17
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.92
+
+
+
+Topic 1
+engines seconds liter horsepower turbo engine litre cylinder diesel economy 
+Topic 2
+comfort sport suspension changes corners steering ride response mode body 
+Topic 3
+hand entertainment information screen pop review 
+Topic 4
+touch climate ways buttons part controls center view 
+Topic 5
+area space roof problem back seats room seat headroom storage 
+Topic 6
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.75
+nmpi score: 0.33
+u_mass score: -2.27
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.64
+
+
+
+Topic 1
+litre cylinder horsepower engines turbo seconds liter twin 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+execution time: 0.01
+number of nodes: 36

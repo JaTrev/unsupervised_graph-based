@@ -1,0 +1,90 @@
+Topic 1
+area doors back seats room head headroom roof seat points 
+Topic 2
+screen entertainment hand pop information review 
+Topic 3
+touch navigation ways part climate center color buttons controls cabin 
+Topic 4
+seconds turbo twin torque acceleration power clutch petrol engines miles 
+Topic 5
+corners comfort changes track suspension sport gear steering modes response 
+intrinsic evaluation
+c_v score: 0.67
+nmpi score: 0.27
+extrinsic evaluation
+c_v score: 0.46
+nmpi score: -0.26
+dbs score: : 0.76
+
+
+
+Topic 1
+seats room head headroom back roof doors seat 
+Topic 2
+seconds turbo twin torque power acceleration clutch cylinder litre horsepower 
+Topic 3
+entertainment screen hand pop information review 
+Topic 4
+touch part ways climate buttons controls 
+Topic 5
+comfort corners changes suspension sport modes steering 
+intrinsic evaluation
+c_v score: 0.75
+nmpi score: 0.31
+extrinsic evaluation
+c_v score: 0.54
+nmpi score: -0.03
+dbs score: : 0.61
+
+
+
+Topic 1
+head back room roof seat headroom 
+Topic 2
+seconds petrol miles gallon diesel economy 
+Topic 3
+seconds turbo twin acceleration torque cylinder litre clutch power horsepower 
+Topic 4
+touch part buttons controls ways climate 
+intrinsic evaluation
+c_v score: 0.79
+nmpi score: 0.35
+extrinsic evaluation
+c_v score: 0.66
+nmpi score: 0.12
+dbs score: : 0.65
+
+
+
+Topic 1
+seconds turbo twin acceleration cylinder torque litre horsepower engines power 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+

@@ -1,0 +1,122 @@
+Topic 1
+well let course anything lot face vehicle sense driver way 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 10.671857
+number of nodes: 226
+
+
+
+Topic 1
+course sense face vehicle lot way bit driver experience something 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 1.047332
+number of nodes: 213
+
+
+
+Topic 1
+features instance view climate part ways touch feature look press 
+Topic 2
+brakes gearbox weight town speed performance acceleration mode torque difference 
+Topic 3
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.52
+nmpi score: 0.17
+u_mass score: -3.67
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.58
+
+execution time: 0.589411
+number of nodes: 187
+
+
+
+Topic 1
+sport comfort steering changes response modes corners suspension mode ride 
+Topic 2
+engines turbo seconds litre cylinder horsepower liter twin engine torque 
+Topic 3
+roof back room area seats headroom seat doors head problem 
+Topic 4
+touch ways part controls cabin climate buttons card color center 
+Topic 5
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.71
+nmpi score: 0.3
+u_mass score: -2.34
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.55
+
+execution time: 0.118623
+number of nodes: 161
+
+
+
+Topic 1
+gallon diesel petrol miles economy seconds hour 
+Topic 2
+turbo twin cylinder litre torque horsepower engines acceleration power seconds 
+Topic 3
+room seat headroom roof head back seats 
+Topic 4
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.85
+nmpi score: 0.42
+u_mass score: -1.47
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.63
+
+execution time: 0.030519
+number of nodes: 109
+
+
+
+Topic 1
+turbo twin cylinder litre torque horsepower acceleration engines seconds transmission 
+Topic 2
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.020956
+number of nodes: 58
+
+
+

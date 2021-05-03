@@ -1,0 +1,122 @@
+Topic 1
+well let course lot face vehicle anything reason sense world 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 10.671857
+number of nodes: 226
+
+
+
+Topic 1
+well let course lot face vehicle sense driver way bit 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 1.047332
+number of nodes: 213
+
+
+
+Topic 1
+course sense way bit driver lot face vehicle something feature 
+Topic 2
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+execution time: 0.589411
+number of nodes: 187
+
+
+
+Topic 1
+gearbox weight speed brakes town acceleration torque power mode performance 
+Topic 2
+features climate look part view ways press touch dash feature 
+Topic 3
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.57
+nmpi score: 0.17
+u_mass score: -3.77
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.56
+
+execution time: 0.118623
+number of nodes: 161
+
+
+
+Topic 1
+engines seconds liter horsepower turbo engine litre cylinder diesel economy 
+Topic 2
+comfort sport corners suspension steering changes response track ride mode 
+Topic 3
+climate touch ways buttons center part controls view side 
+Topic 4
+hand entertainment information screen pop review 
+Topic 5
+area space roof problem back seats room seat headroom storage 
+Topic 6
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.75
+nmpi score: 0.33
+u_mass score: -2.2
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.65
+
+execution time: 0.030519
+number of nodes: 109
+
+
+
+Topic 1
+engines turbo litre horsepower seconds cylinder liter twin engine power 
+Topic 2
+room headroom seat roof head back 
+Topic 3
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.85
+nmpi score: 0.42
+u_mass score: -1.41
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.32
+
+execution time: 0.020956
+number of nodes: 58
+
+
+

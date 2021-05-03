@@ -1,0 +1,68 @@
+Topic 1
+well let course face lot vehicle sense way bit driver 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+Topic 1
+features instance view climate part look touch ways feature press 
+Topic 2
+track sport corners changes comfort steering feels modes suspension feel 
+Topic 3
+engines turbo seconds litre cylinder horsepower liter twin engine torque 
+Topic 4
+channel thanks share video dot please wow money 
+intrinsic evaluation
+c_v score: 0.7
+nmpi score: 0.28
+u_mass score: -2.37
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.53
+
+
+
+Topic 1
+gallon diesel petrol miles economy seconds hour 
+Topic 2
+turbo twin cylinder litre torque horsepower acceleration power engines city 
+Topic 3
+room seat headroom roof head back seats 
+Topic 4
+channel video please thanks dot share wow 
+intrinsic evaluation
+c_v score: 0.84
+nmpi score: 0.42
+u_mass score: -1.56
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : 0.61
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+u_mass score: -1000.0
+dbs score: : -1000.0
+
+
+
+execution time: 0.01
+number of nodes: 36

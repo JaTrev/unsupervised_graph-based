@@ -1,0 +1,104 @@
+Topic 1
+touch navigation ways part area doors back climate screen seats 
+Topic 2
+corners comfort changes track suspension sport air gear steering modes 
+Topic 3
+seconds turbo twin torque acceleration power clutch petrol engines miles 
+Topic 4
+channel dot please thanks share video wow money 
+intrinsic evaluation
+c_v score: 0.64
+nmpi score: 0.23
+extrinsic evaluation
+c_v score: 0.45
+nmpi score: -0.23
+dbs score: : 0.92
+
+
+
+Topic 1
+comfort corners changes suspension sport modes response gear steering mode 
+Topic 2
+seconds turbo twin torque power acceleration clutch petrol cylinder litre 
+Topic 3
+area seats room head headroom back roof doors seat window 
+Topic 4
+touch navigation part ways climate entertainment place buttons controls screen 
+Topic 5
+channel dot please thanks share video wow money 
+intrinsic evaluation
+c_v score: 0.72
+nmpi score: 0.29
+extrinsic evaluation
+c_v score: 0.5
+nmpi score: -0.14
+dbs score: : 0.8
+
+
+
+Topic 1
+seconds petrol miles gallon diesel hour economy 
+Topic 2
+seconds turbo twin acceleration torque cylinder litre clutch power horsepower 
+Topic 3
+corners comfort suspension changes sport response steering feel 
+Topic 4
+screen hand pop information entertainment review 
+Topic 5
+touch navigation part buttons controls center ways climate 
+Topic 6
+head back room roof seat headroom seats doors window floor 
+Topic 7
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.79
+nmpi score: 0.35
+extrinsic evaluation
+c_v score: 0.53
+nmpi score: -0.1
+dbs score: : 0.77
+
+
+
+Topic 1
+seconds petrol diesel miles hour gallon economy 
+Topic 2
+seconds turbo twin acceleration cylinder clutch torque litre horsepower engines 
+Topic 3
+head roof room headroom back seats seat 
+Topic 4
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: 0.84
+nmpi score: 0.42
+extrinsic evaluation
+c_v score: 0.63
+nmpi score: -0.02
+dbs score: : 0.66
+
+
+
+Topic 1
+seconds turbo cylinder acceleration twin litre engines horsepower torque 
+Topic 2
+channel dot please thanks share video wow 
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+
+intrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+extrinsic evaluation
+c_v score: -1000.0
+nmpi score: -1000.0
+dbs score: : -1000.0
+
+
+

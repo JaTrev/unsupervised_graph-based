@@ -1,0 +1,8 @@
+start,end,segment_id,word
+86560,86790,4,Noise
+86790,87220,4,suppression
+87230,87430,4,is
+87430,88320,4,positively
+88320,88640,4,top
+88640,89149,4,notch
+89149,89150,4,.

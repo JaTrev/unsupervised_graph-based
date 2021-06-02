@@ -5,6 +5,7 @@ import collections
 from tqdm import tqdm
 import pickle
 from pathlib import Path
+from typing import Tuple
 
 
 def get_partition(task_data_path, path="data/processed_tasks/metadata/partition.csv") \
@@ -105,15 +106,21 @@ def prepare_data(task_data_path, transcription_path) -> dict:
     return data
 
 
-def get_data(task_data_path='data/processed_tasks/c2_muse_topic',
-             transcription_path='data/processed_tasks/c2_muse_topic/transcription_segments') -> (list, list):
+def get_data(get_test_data: bool, task_data_path='data/processed_tasks/c2_muse_topic',
+             transcription_path='data/processed_tasks/c2_muse_topic/transcription_segments') \
+        -> Tuple[list, list, list, list]:
     """
     get_data collects the data and test_data
 
+    :param get_test_data: getting test data flag
     :param task_data_path:  path to data task
     :param transcription_path: path to transcription
 
-    :return: training data, testing data
+    :return:
+        - training data -
+        - training labels -
+        - testing data -
+        - testing labels -
     """
 
     if Path("data/saved_data.pickle").is_file():
@@ -122,13 +129,18 @@ def get_data(task_data_path='data/processed_tasks/c2_muse_topic',
             data = pickle.load(myFile)
 
         with open("data/saved_data_labels.pickle", "rb") as myFile:
-            data_label = pickle.load(myFile)
+            data_labels = pickle.load(myFile)
 
-        with open("data/saved_test_data.pickle", "rb") as myFile:
-            test_data = pickle.load(myFile)
+        if get_test_data:
 
-        with open("data/saved_test_labels.pickle", "rb") as myFile:
-            test_data_label = pickle.load(myFile)
+            with open("data/saved_test_data.pickle", "rb") as myFile:
+                test_data = pickle.load(myFile)
+
+            with open("data/saved_test_labels.pickle", "rb") as myFile:
+                test_data_label = pickle.load(myFile)
+        else:
+            test_data = None
+            test_data_label = None
 
     else:
 
@@ -137,25 +149,51 @@ def get_data(task_data_path='data/processed_tasks/c2_muse_topic',
         data = all_data['train']['text']
         data.extend(all_data['devel']['text'])
 
-        data_label = all_data['train']['labels_topic']
-        data_label.extend(all_data['devel']['labels_topic'])
-
-        test_data = all_data['test']['text']
-        test_data_label = all_data['test']['labels_topic']
+        data_labels = all_data['train']['labels_topic']
+        data_labels.extend(all_data['devel']['labels_topic'])
 
         with open("data/saved_data.pickle", "wb") as myFile:
             pickle.dump(data, myFile)
 
         with open("data/saved_data_labels.pickle", "wb") as myFile:
-            pickle.dump(data_label, myFile)
+            pickle.dump(data_labels, myFile)
 
-        with open("data/saved_test_data.pickle", "wb") as myFile:
-            pickle.dump(test_data, myFile)
+        if get_test_data:
+            test_data = all_data['test']['text']
+            test_data_label = all_data['test']['labels_topic']
 
-        with open("data/saved_test_labels.pickle", "wb") as myFile:
-            pickle.dump(test_data_label, myFile)
+            with open("data/saved_test_data.pickle", "wb") as myFile:
+                pickle.dump(test_data, myFile)
 
-    return data, data_label, test_data, test_data_label
+            with open("data/saved_test_labels.pickle", "wb") as myFile:
+                pickle.dump(test_data_label, myFile)
+        else:
+            test_data = None
+            test_data_label = None
+
+    filtered_data, filtered_data_labels = filter_dataset(data, data_labels)
+
+    if get_test_data:
+        filtered_test_data, filtered_test_data_labels = filter_dataset(test_data, test_data_label)
+    else:
+        filtered_test_data, filtered_test_data_labels = (None, None)
+
+    return filtered_data, filtered_data_labels, filtered_test_data, filtered_test_data_labels
 
 
+def filter_dataset(data: list, data_labels: list) -> (list, list):
+    """
+    filter_dataset returns a set of segments without the very short segments,
+    and their respective labels
 
+    :param data: segment data set
+    :param data_labels: set of data labels
+    :return:
+        - filtered_data - segment data set without the short segments
+        - filtered_data_labels -  labels of the returning segment data set
+    """
+    new_data, new_data_labels = zip(*((segment, label) for segment, label
+                                      in zip(data, data_labels)
+                                      if len([w for w in segment.split() if w.isalpha()]) > 2))
+
+    return new_data, new_data_labels

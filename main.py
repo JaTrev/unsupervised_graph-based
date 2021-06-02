@@ -17,23 +17,16 @@ def main_fct(preprocessed_data_set: str, topic_model_type: str, raw_data: list, 
     :param raw_test_labels: original test set labels
     """
 
-    assert preprocessed_data_set in ["JN", "FP"]
-    if preprocessed_data_set == "JN":
-        do_lemmatizing = False
-        do_stop_word_removal = False
-    else:
-        do_lemmatizing = True
-        do_stop_word_removal = True
-
     data_processed, data_processed_labels, vocab, tokenized_docs = preprocessing(
-        raw_data, raw_labels, do_lemmatizing=do_lemmatizing, do_stop_word_removal=do_stop_word_removal)
+        raw_data, raw_labels, preprocessing_type=preprocessed_data_set)
 
     if (raw_test_data is not None) and (raw_test_labels is not None):
-        _, _, _, test_tokenized_docs = preprocessing(raw_test_data, raw_test_labels, do_lemmatizing=do_lemmatizing,
-                                                     do_stop_word_removal=do_stop_word_removal)
+        _, _, _, test_tokenized_docs = preprocessing(raw_test_data, raw_test_labels,
+                                                     preprocessing_type=preprocessed_data_set)
     else:
         test_tokenized_docs = None
 
+    assert 0
     # perform topi modeling based on topic_model_type
     if topic_model_type == "RRW":
         word2vec_topic_model(data_processed, vocab, tokenized_docs, test_tokenized_docs,

@@ -135,18 +135,18 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
 
             # topic model evaluation
             # intrinsic  scores
-            y_c_v_model[cluster_type].append(c_v_coherence_score(tokenized_docs, clusters_words))
+            y_c_v_model[cluster_type].append(get_coherence_score(tokenized_docs, clusters_words))
             y_npmi_model[cluster_type].append(npmi_coherence_score(tokenized_docs, clusters_words, len(clusters_words)))
             y_dbs_model[cluster_type].append(davies_bouldin_index(clusters_words_embeddings))
-            y_uMass_model[cluster_type].append(c_v_coherence_score(tokenized_docs, clusters_words, cs_type='u_mass'))
+            y_uMass_model[cluster_type].append(get_coherence_score(tokenized_docs, clusters_words, cs_type='u_mass'))
 
             # extrinsic scores
             if test_tokenized_segments is not None:
-                test_y_c_v_model[cluster_type].append(c_v_coherence_score(test_tokenized_segments, clusters_words))
+                test_y_c_v_model[cluster_type].append(get_coherence_score(test_tokenized_segments, clusters_words))
                 test_y_npmi_model[cluster_type].append(npmi_coherence_score(test_tokenized_segments, clusters_words,
                                                                             len(clusters_words)))
                 test_y_uMass_model[cluster_type].append(
-                    c_v_coherence_score(test_tokenized_segments, clusters_words, cs_type='u_mass'))
+                    get_coherence_score(test_tokenized_segments, clusters_words, cs_type='u_mass'))
             else:
                 test_y_c_v_model[cluster_type].append(-1000.0)
                 test_y_npmi_model[cluster_type].append(-1000.0)
@@ -207,7 +207,7 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
     x = [x for x in range(50, 100, 10)] + [95]
     # x = [80]
     # x = [x for x in range(1, 11, 1)]
-    execution_times = []
+    execution_times = {"K=1": [], "K=2": [], "K=3": []}
     number_of_nodes = []
 
     for sim in x:
@@ -273,16 +273,16 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
 
                 # topic model evaluation
                 # intrinsic scores
-                cs_c_v = c_v_coherence_score(tokenized_docs, cluster_words)
+                cs_c_v = get_coherence_score(tokenized_docs, cluster_words)
                 dbs = davies_bouldin_index(cluster_embeddings)
                 cs_npmi = npmi_coherence_score(data_processed, cluster_words, len(cluster_words))
-                cs_u_mass = c_v_coherence_score(tokenized_docs, cluster_words, cs_type='u_mass')
+                cs_u_mass = get_coherence_score(tokenized_docs, cluster_words, cs_type='u_mass')
 
                 # extrinsic scores
                 if test_tokenized_segments is not None:
-                    cs_c_v_test = c_v_coherence_score(test_tokenized_segments, cluster_words)
+                    cs_c_v_test = get_coherence_score(test_tokenized_segments, cluster_words)
                     cs_npmi_test = npmi_coherence_score(test_tokenized_segments, cluster_words, len(cluster_words))
-                    cs_u_mass_test = c_v_coherence_score(test_tokenized_segments, cluster_words, cs_type='u_mass')
+                    cs_u_mass_test = get_coherence_score(test_tokenized_segments, cluster_words, cs_type='u_mass')
                 else:
                     cs_c_v_test = -1000.0
                     cs_npmi_test = -1000.0
@@ -298,8 +298,7 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
             y_umass_model[k_component].append(cs_u_mass)
             test_y_umass_model[k_component].append(cs_u_mass_test)
 
-        # save topic model scores
-        execution_times.append(k_components_time + graph_creation_time)
+            execution_times[k_component].append(k_components_time + graph_creation_time)
 
     save_model_scores(x_values=x, models=list(y_topics.keys()), model_topics=y_topics, model_c_v_scores=y_c_v_model,
                       model_npmi_scores=y_npmi_model, model_c_v_test_scores=test_y_c_v_model,

@@ -26,7 +26,6 @@ def main_fct(preprocessed_data_set: str, topic_model_type: str, raw_data: list, 
     else:
         test_tokenized_docs = None
 
-    assert 0
     # perform topi modeling based on topic_model_type
     if topic_model_type == "RRW":
         word2vec_topic_model(data_processed, vocab, tokenized_docs, test_tokenized_docs,

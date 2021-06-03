@@ -1,4 +1,4 @@
-gensim==3.4.0
+gensim>=4.0
 nltk==3.2.5
 hdbscan==0.8.26
 kaggle==1.5.9

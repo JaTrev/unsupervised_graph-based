@@ -1,17 +1,8 @@
 from gensim.models import Word2Vec
 import numpy as np
 from typing import Tuple
-
-
-def get_saved_w2v_model(w2v_model: str) -> Word2Vec:
-    """
-    get_saved_w2v_model returns a pretrained Word2Vec model
-
-    :param w2v_model: name of the pretrained model
-    :return:  word2vec model
-    """
-    w2v_model = Word2Vec.load(w2v_model)
-    return w2v_model
+from pathlib import Path
+import pickle
 
 
 def create_w2v_model(processed_data: list, min_c: int, win: int, negative: int, seed: int,
@@ -64,13 +55,14 @@ def create_w2v_model(processed_data: list, min_c: int, win: int, negative: int, 
     return w2v_model
 
 
-def get_word_vectors(processed_data: list, vocab: list, saved_model=None, params=None) -> Tuple[list, list, Word2Vec]:
+def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, params: dict) -> \
+        Tuple[list, list, Word2Vec]:
     """
     get_word_vectors calculates the word embeddings
 
     :param processed_data: list of processed documents
     :param vocab: list of words in the processed documents
-    :param saved_model: name of a previously saved Word2Vec model
+    :param model_file_name: name of a previously saved Word2Vec model
     :param params: parameters for a Word2Vec
 
     :rtype: list, list, Word2Vec
@@ -80,8 +72,11 @@ def get_word_vectors(processed_data: list, vocab: list, saved_model=None, params
         - w2v_model - Word2Vec model
     """
 
-    if isinstance(saved_model, str):
-        w2v_model = get_saved_w2v_model(saved_model)
+    if Path("data/" + model_file_name).is_file():
+
+        print("using pre-calculated w2v model")
+        with open("data/" + model_file_name, "rb") as myFile:
+            w2v_model = pickle.load(myFile)
 
     else:
 
@@ -91,6 +86,8 @@ def get_word_vectors(processed_data: list, vocab: list, saved_model=None, params
             "missing w2v_model params, need: min_c', 'win', 'negative',', 'seed'")
 
         w2v_model = create_w2v_model(processed_data, **params)
+        with open("data/" + model_file_name, "wb") as myFile:
+            pickle.dump(w2v_model, myFile)
 
     # vocab_words and vocab_embeddings are sorted like vocab
     vocab_words = [w for w in vocab if w in w2v_model.wv.index_to_key]
@@ -98,6 +95,34 @@ def get_word_vectors(processed_data: list, vocab: list, saved_model=None, params
                         for w in vocab_words]
 
     return vocab_words, vocab_embeddings, w2v_model
+
+
+def get_vocabulary_embeddings(training_data_processed: list, vocab: list, topic_model: str, model_file_name: str,) \
+        -> Tuple[list, list, Word2Vec]:
+    """
+    get_vocabulary_embeddings fetches the word embeddings of all relevant vocabulary words
+
+    :param training_data_processed: training set
+    :param vocab: list of vocabulary words, calculated in preprocessing
+    :param topic_model: name of the topic modelling approach
+    :param model_file_name: name of the saved topic model
+    :return:
+        - vocab_words - list of vocabulary words
+        - vocab_embeddings - list of embeddings for the vocabulary words
+        - w2v_model - Word2Vec model
+    """
+    w2v_params_k_components = {"min_c": 50, "win": 15, "negative": 0, "sample": 1e-5,
+                               "hs": 1, "epochs": 400, "sg": 1, 'seed': 42}
+    w2v_params_baseline = {"min_c": 10, "win": 7, "negative": 0, "sample": 1e-5,
+                           "hs": 1, "epochs": 400, "sg": 1, 'seed': 42,
+                           'ns_exponent': 0.75}
+    if topic_model == "k-components":
+        w2v_params = w2v_params_k_components
+    else:
+        assert topic_model == "baseline"
+        w2v_params = w2v_params_baseline
+
+    return get_word_vectors(training_data_processed, vocab, model_file_name=model_file_name, params=w2v_params)
 
 
 def get_topic_vector(topic_embeddings: list) -> np.ndarray:

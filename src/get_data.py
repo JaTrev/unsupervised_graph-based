@@ -106,12 +106,13 @@ def prepare_data(task_data_path, transcription_path) -> dict:
     return data
 
 
-def get_data(get_test_data: bool, task_data_path='data/processed_tasks/c2_muse_topic',
+def get_data(data_set: str, get_test_data: bool, task_data_path='data/processed_tasks/c2_muse_topic',
              transcription_path='data/processed_tasks/c2_muse_topic/transcription_segments') \
         -> Tuple[list, list, list, list]:
     """
     get_data collects the data and test_data
 
+    :param data_set: name of the data set (MUSE or CRR)
     :param get_test_data: getting test data flag
     :param task_data_path:  path to data task
     :param transcription_path: path to transcription
@@ -122,6 +123,24 @@ def get_data(get_test_data: bool, task_data_path='data/processed_tasks/c2_muse_t
         - testing data -
         - testing labels -
     """
+
+    if data_set == "CRR":
+        # using the Citysearch Restaurant Reviews corpus
+        data, test_data = ([], [])
+        with open("data/restaurant/test.txt") as f:
+            for line in f:
+                if "\n" != line:
+                    test_data.append(line.replace("\n", ""))
+
+        with open("data/restaurant/train.txt") as f:
+            for line in f:
+                if "\n" != line:
+                    data.append(line.replace("\n", ""))
+
+        test_labels = [-1 for _ in range(len(test_data))]
+        labels = [-1 for _ in range(len(data))]
+
+        return data, labels, test_data, test_labels
 
     if Path("data/saved_data.pickle").is_file():
 

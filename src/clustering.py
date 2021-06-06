@@ -3,6 +3,7 @@ from src.misc import *
 import numpy as np
 import hdbscan
 from typing import Tuple
+import time
 
 
 def k_means_clustering(word_embeddings: list, word_weights: list = None, params: dict = None) -> list:
@@ -20,7 +21,7 @@ def k_means_clustering(word_embeddings: list, word_weights: list = None, params:
 
 
 def hdbscan_clustering(words: list, embeddings: list, min_cluster_size: int = 10,  n_words: int = 30) \
-        -> Tuple[list, list, list, list]:
+        -> Tuple[list, list, float]:
     """
     hdbscan_clustering performs HDBSCAN clustering on the list of embeddings
 
@@ -30,14 +31,12 @@ def hdbscan_clustering(words: list, embeddings: list, min_cluster_size: int = 10
     :param n_words: number of topic representatives
 
     :return:
-        - list of cluster labels
-        - list of clustering probabilities
-        - list of topic representatives
-        - list of embeddings of topic representatives
-
-    cluster.labels_, cluster.probabilities_, hdbscan_clusters_words, hdbscan_clusters_words_embeddings
+        - hdbscan_clusters_words - list of topic representatives
+        - hdbscan_clusters_words_embeddings - list of embeddings of topic representatives
+        - execution_time_hdbscan - process time needed for execution
     """
     assert len(words) == len(embeddings)
+    start_time_hdbscan = time.process_time()
 
     cluster = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size, metric='euclidean',
                               cluster_selection_method='eom').fit(embeddings)
@@ -61,11 +60,12 @@ def hdbscan_clustering(words: list, embeddings: list, min_cluster_size: int = 10
         hdbscan_clusters_words_embeddings.append([temp_cluster_embeddings[i_c][i]
                                                   for i in c_sorted_indices[:n_words]])
 
-    return cluster.labels_, cluster.probabilities_, hdbscan_clusters_words, hdbscan_clusters_words_embeddings
+    execution_time_hdbscan = time.process_time() - start_time_hdbscan
+    return hdbscan_clusters_words, hdbscan_clusters_words_embeddings, execution_time_hdbscan
 
 
 def sort_words(processed_segments: list, cluster_words: list, cluster_embeddings: list,
-               weight_type: str = "tf") -> (list, list):
+               weight_type: str = "tf") -> Tuple[list, list]:
     """
     sort_words sorts the words within each cluster by the given weight type
 
@@ -114,9 +114,8 @@ def sort_words(processed_segments: list, cluster_words: list, cluster_embeddings
 
 
 def get_word_clusters(processed_docs: list, words: list, word_embeddings: list, vocab: list,
-                      clustering_type: str, params: dict,
-                      clustering_weight_type: str = 'tf',
-                      ranking_weight_type=None) -> (list, list):
+                      clustering_type: str, params: dict, clustering_weight_type: str = 'tf',
+                      ranking_weight_type=None) -> Tuple[list, list, float]:
     """
     get_word_clusters returns a sorted list of words for each cluster
 
@@ -129,13 +128,18 @@ def get_word_clusters(processed_docs: list, words: list, word_embeddings: list, 
     :param clustering_weight_type: word weighting type used for clustering ("tf", "tf-df", "tf-idf")
     :param ranking_weight_type: word weighting type used for ranking words ("tf", "tf-df", "tf-idf")
 
-    :return: list of cluster words for each cluster, list of word embeddings for each cluster (sorted!)
+    :return:
+        - cleaned_cluster_words - list of cluster words for each cluster
+        - cleaned_cluster_embeddings - list of word embeddings for each cluster (sorted!)
+        - execution_time - process time needed for execution
     """
     # :param n_words: number of words for every cluster
 
     assert len(word_embeddings) == len(words), "word_embeddings and word list do not have the same length"
     assert clustering_type in ['K-Means'], "incorrect clustering_type"
     assert all([w in vocab for w in words]), "some words are not in the vocabulary"
+
+    start_time = time.process_time()
 
     clustering_dict = {
         'K-Means': k_means_clustering,
@@ -182,8 +186,14 @@ def get_word_clusters(processed_docs: list, words: list, word_embeddings: list, 
         cleaned_cluster_words.append([w for c in cluster_words for w in c])
         cleaned_cluster_embeddings.append([emb for c in cluster_embeddings for emb in c])
 
+    execution_time = time.process_time() - start_time
+
     if ranking_weight_type is None:
-        return cleaned_cluster_words, cleaned_cluster_embeddings
+        return cleaned_cluster_words, cleaned_cluster_embeddings, execution_time
+
     else:
-        return sort_words(processed_docs, cleaned_cluster_words, cleaned_cluster_embeddings,
-                          weight_type=ranking_weight_type)
+        # using re-ranking model instead of topic vector similarity
+        sorted_cluster_words, sorted_cluster_embeddings = sort_words(processed_docs, cleaned_cluster_words,
+                                                                     cleaned_cluster_embeddings,
+                                                                     weight_type=ranking_weight_type)
+        return sorted_cluster_words, sorted_cluster_embeddings, execution_time

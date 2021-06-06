@@ -58,12 +58,15 @@ def create_networkx_graph(words: list, word_embeddings: list, similarity_thresho
         - graph creation time
     """
     assert len(words) == len(word_embeddings), "words and word_embeddings must have the same length"
+    assert method in ["using_top_n", "using_cutoff"]
 
     start_time = time.process_time()
-
-    graph = nx.Graph()  # undirected graph
     edge_weights = []
 
+    # create undirected graph
+    graph = nx.Graph()
+
+    # split word embedding list in two halves
     first_half_length = int(len(word_embeddings) / 2)
     first_half = word_embeddings[:first_half_length]
     second_half = word_embeddings[first_half_length:]
@@ -71,24 +74,24 @@ def create_networkx_graph(words: list, word_embeddings: list, similarity_thresho
 
     for i in range(len(first_half)):
 
+        # sort edges of node i by edge weight (similarity score)
         i_sim_vector = sim_matrix[i]
         sim_i_sorted_index = sorted(range(len(i_sim_vector)), key=i_sim_vector.__getitem__, reverse=True)
 
-        if method == "using_top_n":
-            j_indices = sim_i_sorted_index[:top_n]
-        else:
-            j_indices = sim_i_sorted_index
+        # if method == "using_top_n":
+        j_indices = sim_i_sorted_index[:10]
+        # else: j_indices = sim_i_sorted_index
 
+        # iterate over all relevant adjacent nodes
         for j in j_indices:
-
             sim = i_sim_vector[j]
-            word_i = words[i]
-            word_j = words[first_half_length + j]
 
             if method == "using_cutoff" and sim < similarity_threshold:
                 break
 
             else:
+                word_i = words[i]
+                word_j = words[first_half_length + j]
                 graph.add_edge(word_i, word_j, weight=float(sim))
                 edge_weights.append(sim)
 

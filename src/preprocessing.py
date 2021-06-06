@@ -32,8 +32,7 @@ stop_words.extend(['put', 'yeah', 'lot''dot', 'le', "'ve", 'really', 'like', 'go
 stop_words.extend(["\'re", "n\'t", "n\'t", "'ve", "really", "car", "cars"])
 
 
-def preprocessing(segments: list, segment_labels: list, preprocessing_type: str, do_stemming: bool = False,
-                  remove_low_freq: bool = False, count_threshold: int = 1) \
+def preprocessing(segments: list, segment_labels: list, preprocessing_type: str) \
         -> Tuple[list, list, list, list]:
     """
     preprocessing is used to preprocess the data set
@@ -41,9 +40,6 @@ def preprocessing(segments: list, segment_labels: list, preprocessing_type: str,
     :param segments: raw list of segments
     :param segment_labels: list of segment labels
     :param preprocessing_type: defines the preprocessing approach (["JN", "FP"])
-    :param do_stemming: if True, stemming is performed (default: False)
-    :param remove_low_freq: if True, all words with absolute frequency under threshold are removed
-    :param count_threshold: threshold used when remove_low_freq is set to True
 
     :return:
         - preprocessed segments
@@ -52,14 +48,23 @@ def preprocessing(segments: list, segment_labels: list, preprocessing_type: str,
         - list of tokenized 'raw' segments
 
     """
+    do_stemming = False
 
-    if preprocessing_type == "JN":
+    if preprocessing_type == "MUSE":
+        # preprocessing for MUSE
+        do_just_nouns = True
         do_lemmatizing = False
         do_stop_word_removal = False
+        remove_low_freq = False
+        count_threshold = 1
     else:
-        assert preprocessing_type == "FP"
-        do_lemmatizing = True
+        assert preprocessing_type == "CRR"
+        # preprocessing for CRR
+        do_just_nouns = False
+        do_lemmatizing = False
         do_stop_word_removal = True
+        remove_low_freq = True
+        count_threshold = 30
 
     vocabulary = []
     new_docs = []
@@ -83,7 +88,8 @@ def preprocessing(segments: list, segment_labels: list, preprocessing_type: str,
             tokens = [w for w in tokens if w not in stop_words]
 
         # remove all words that are not nouns
-        tokens = [w for (w, pos) in nltk.pos_tag(tokens) if pos in ['NN', 'NNP', 'NNS', 'NNPS']]
+        if do_just_nouns:
+            tokens = [w for (w, pos) in nltk.pos_tag(tokens) if pos in ['NN', 'NNP', 'NNS', 'NNPS']]
 
         # stemming
         if do_stemming:
@@ -104,10 +110,10 @@ def preprocessing(segments: list, segment_labels: list, preprocessing_type: str,
     if remove_low_freq:
         # remove low-frequency terms
 
-        temp_new_docs = []
+        temp_all_data = []
         for d in new_docs:
-            temp_new_docs.extend(d)
-        counter = Counter(temp_new_docs)
+            temp_all_data.extend(d)
+        counter = Counter(temp_all_data)
 
         docs_threshold = []
         labels_threshold = []

@@ -2,9 +2,7 @@ from src.vectorization import *
 from src.clustering import *
 from src.graphs import *
 from src.misc import save_model_scores
-import pickle
-from networkx.algorithms import approximation as apxa
-from pathlib import Path
+from networkx.algorithms import approximation as approx
 import time
 
 w2v_params = {"min_c": 10, "win": 7, "negative": 0, "sample": 1e-5, "hs": 1, "epochs": 400, "sg": 1, 'seed': 42,
@@ -47,36 +45,20 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
     test_y_npmi_model = {"K-Means": [], "Agglomerative": [], "HDBSCAN": []}
     y_topics = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
 
-    y_uMass_model = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
-    test_y_uMass_model = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
+    y_umass_model = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
+    test_y_umass_model = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
+
+    execution_times = {'K-Means': [], 'Agglomerative': [], 'HDBSCAN': []}
 
     # get words and word embeddings
-    # words, word_embeddings, _ = get_word_vectors(data_processed, vocab, params=w2v_params)
+    words, word_embeddings, w2v_model = get_vocabulary_embeddings(data_processed, vocab, topic_model="baseline",
+                                                                  model_file_name="w2v_model-" +
+                                                                                  data_set_name + ".pickle",
+                                                                  data_set_name=data_set_name)
 
-    words, word_embeddings = get_vocabulary_embeddings(data_processed, vocab, topic_model="baseline",
-                                                       model_file_name="w2v_model-" + data_set_name + ".pickle")
-    """
-    w2v_model_file = "w2v_model-" + data_set_name + ".pickle"
-    if Path("data/" + w2v_model_file).is_file():
-
-        print("using pre-calculated w2v model")
-        with open("data/" + w2v_model_file, "rb") as myFile:
-            w2v_model = pickle.load(myFile)
-
-            words = [w for w in vocab if w in w2v_model.wv.index2word]
-            word_embeddings = [w2v_model.wv.vectors[w2v_model.wv.index2word.index(w)] for w in words]
-
-    else:
-        words, word_embeddings, w2v_model = get_word_vectors(data_processed, vocab, params=w2v_params)
-
-        with open("data/" + w2v_model_file, "wb") as myFile:
-            pickle.dump(w2v_model, myFile)
-    """
     # perform HDBSCAN clustering
-    start_time_hdbscan = time.process_time()
-    _, _, hdbscan_clusters_words, hdbscan_clusters_words_embeddings = hdbscan_clustering(words, word_embeddings,
-                                                                                         min_cluster_size=6)
-    execution_time_hdbscan = time.process_time() - start_time_hdbscan
+    hdbscan_clusters_words, hdbscan_clusters_words_embeddings, execution_time_hdbscan = hdbscan_clustering(
+        words, word_embeddings, min_cluster_size=6)
 
     # iterate over x-values (number of topics list)
     for k in x:
@@ -89,6 +71,7 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
                 clusters_words_embeddings = hdbscan_clusters_words_embeddings
 
                 execution_time = execution_time_hdbscan
+
             else:
                 assert cluster_type in ["K-Means", "Agglomerative"]
                 if cluster_type == "K-Means":
@@ -102,20 +85,10 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
                 else:
                     ranking_weight = ranking_weight_type
 
-                print("------------------------")
-                print("clustering type: " + str(cluster_type))
-                print("k: " + str(k))
-                start_time = time.process_time()
-
-                clusters_words, clusters_words_embeddings = get_word_clusters(
+                clusters_words, clusters_words_embeddings, execution_time = get_word_clusters(
                     data_processed, words, word_embeddings, vocab, clustering_type=cluster_type,
                     params=clustering_params, clustering_weight_type=clustering_weight_type,
-                    ranking_weight_type=ranking_weight,
-                )
-
-                execution_time = time.process_time() - start_time
-                print("execution time: " + "{:.6f}".format(execution_time))
-                print("------------------------")
+                    ranking_weight_type=ranking_weight)
 
             # perform Topic Vector Similarity
             if topic_vector_flag:
@@ -138,19 +111,21 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
             y_c_v_model[cluster_type].append(get_coherence_score(tokenized_docs, clusters_words))
             y_npmi_model[cluster_type].append(npmi_coherence_score(tokenized_docs, clusters_words, len(clusters_words)))
             y_dbs_model[cluster_type].append(davies_bouldin_index(clusters_words_embeddings))
-            y_uMass_model[cluster_type].append(get_coherence_score(tokenized_docs, clusters_words, cs_type='u_mass'))
+            y_umass_model[cluster_type].append(get_coherence_score(tokenized_docs, clusters_words, cs_type='u_mass'))
 
             # extrinsic scores
             if test_tokenized_segments is not None:
                 test_y_c_v_model[cluster_type].append(get_coherence_score(test_tokenized_segments, clusters_words))
                 test_y_npmi_model[cluster_type].append(npmi_coherence_score(test_tokenized_segments, clusters_words,
                                                                             len(clusters_words)))
-                test_y_uMass_model[cluster_type].append(
+                test_y_umass_model[cluster_type].append(
                     get_coherence_score(test_tokenized_segments, clusters_words, cs_type='u_mass'))
             else:
                 test_y_c_v_model[cluster_type].append(-1000.0)
                 test_y_npmi_model[cluster_type].append(-1000.0)
-                test_y_uMass_model[cluster_type].append(-1000.0)
+                test_y_umass_model[cluster_type].append(-1000.0)
+
+            execution_times[cluster_type].append(execution_time)
 
     # save model scores
     if topic_vector_flag:
@@ -159,13 +134,12 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
         filename_prefix = "RRW"
 
     # save model scores
-
     save_model_scores(x_values=x, models=list(y_topics.keys()), model_topics=y_topics, model_c_v_scores=y_c_v_model,
                       model_npmi_scores=y_npmi_model, model_c_v_test_scores=test_y_c_v_model,
                       model_npmi_test_scores=test_y_npmi_model,
-                      model_u_mass_scores=y_uMass_model, model_u_mass_test_scores=test_y_uMass_model,
-                      execution_time=[-1 for _ in range(len(y_topics[0]))],
-                      number_of_nodes=[-1 for _ in range(len(y_topics[0]))],
+                      model_u_mass_scores=y_umass_model, model_u_mass_test_scores=test_y_umass_model,
+                      execution_time=execution_times,
+                      number_of_nodes=[-1 for _ in range(len(y_topics["K-Means"]))],
                       filename_prefix=filename_prefix,
                       model_dbs_scores=y_dbs_model, x_label="Percentile Cutoff")
 
@@ -190,7 +164,8 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
     vocab_words, vocab_embeddings, w2v_model = get_vocabulary_embeddings(data_processed, vocab,
                                                                          topic_model="k-components",
                                                                          model_file_name="w2v_model-k_components-"
-                                                                                         + data_set_name + ".pickle")
+                                                                                         + data_set_name + ".pickle",
+                                                                         data_set_name=data_set_name)
 
     # dictionary used to save topic model scores
     y_topics = {"K=1": [], "K=2": [], "K=3": []}
@@ -203,23 +178,26 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
     y_umass_model = {"K=1": [], "K=2": [], "K=3": []}
     test_y_umass_model = {"K=1": [], "K=2": [], "K=3": []}
 
-    # iterate over all x values (percentile cutoff values)
-    x = [x for x in range(50, 100, 10)] + [95]
-    # x = [80]
-    # x = [x for x in range(1, 11, 1)]
     execution_times = {"K=1": [], "K=2": [], "K=3": []}
     number_of_nodes = []
 
+    # iterate over all x values (percentile cutoff values)
+    if data_set_name == "CRR":
+        x = [80]
+    else:
+        x = [x for x in range(50, 100, 10)] + [95]
     for sim in x:
 
         # create word embedding graph using cutoff threshold
         graph, graph_creation_time = create_networkx_graph(vocab_words, vocab_embeddings,
                                                            similarity_threshold=0.8, percentile_cutoff=sim)
 
+        print("number of nodes: " + str(graph.number_of_nodes()))
         number_of_nodes.append(graph.number_of_nodes())
+
         # calculate the k-components
         start_time = time.process_time()
-        components_all = apxa.k_components(graph)
+        components_all = approx.k_components(graph, min_density=0.8)
         k_components_time = time.process_time() - start_time
 
         # iterate over all k-components
@@ -235,7 +213,7 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
             for comp in components:
                 if len(comp) >= 6:
                     corpus_clusters.append(list(comp))
-                    clusters_words_embeddings.append([w2v_model.wv.get_vector(w) for w in comp])
+                    clusters_words_embeddings.append([vocab_embeddings[vocab_words.index(w)] for w in comp])
 
             if topic_vector_flag:
                 # perform Topic Vector Similarity
@@ -268,13 +246,12 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
                 cs_u_mass = -1000.0
                 cs_u_mass_test = -1000.0
             else:
-                cluster_embeddings = [[w2v_model.wv.vectors[w2v_model.wv.key_to_index[w]] for w in words]
-                                      for words in cluster_words]
+                # for w in words] for words in cluster_words]
 
                 # topic model evaluation
                 # intrinsic scores
                 cs_c_v = get_coherence_score(tokenized_docs, cluster_words)
-                dbs = davies_bouldin_index(cluster_embeddings)
+                dbs = None
                 cs_npmi = npmi_coherence_score(data_processed, cluster_words, len(cluster_words))
                 cs_u_mass = get_coherence_score(tokenized_docs, cluster_words, cs_type='u_mass')
 

@@ -154,15 +154,18 @@ def vis_topics_score(topics_list: list, c_v_scores: list, npmi_scores: list, tes
 
             myFile.write("intrinsic evaluation" + '\n')
             myFile.write("c_v score: " + str(c_v_scores[i]) + '\n')
-            myFile.write("npmi score: " + str(npmi_scores[i]) + '\n')
             myFile.write("u_mass score: " + str(u_mass_scores[i]) + '\n')
+            myFile.write("npmi score: " + str(npmi_scores[i]) + '\n')
+
+            myFile.write('\n')
 
             myFile.write("extrinsic evaluation" + '\n')
             myFile.write("c_v score: " + str(test_c_v_scores[i]) + '\n')
-            myFile.write("npmi score: " + str(test_npmi_scores[i]) + '\n')
             myFile.write("u_mass score: " + str(test_u_mass_scores[i]) + '\n')
+            myFile.write("npmi score: " + str(test_npmi_scores[i]) + '\n')
 
             if dbs_scores is not None:
+                myFile.write('\n')
                 myFile.write("dbs score: " + ": " + str(dbs_scores[i]) + '\n')
 
             myFile.write('\n')

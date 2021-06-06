@@ -55,7 +55,7 @@ def create_w2v_model(processed_data: list, min_c: int, win: int, negative: int, 
     return w2v_model
 
 
-def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, params: dict) -> \
+def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, params: dict, data_set_name: str) -> \
         Tuple[list, list, Word2Vec]:
     """
     get_word_vectors calculates the word embeddings
@@ -64,6 +64,7 @@ def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, pa
     :param vocab: list of words in the processed documents
     :param model_file_name: name of a previously saved Word2Vec model
     :param params: parameters for a Word2Vec
+    :param data_set_name: name of data set being examined
 
     :rtype: list, list, Word2Vec
     :return:
@@ -72,33 +73,44 @@ def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, pa
         - w2v_model - Word2Vec model
     """
 
-    if Path("data/" + model_file_name).is_file():
-
-        print("using pre-calculated w2v model")
-        with open("data/" + model_file_name, "rb") as myFile:
+    if data_set_name == "CRR":
+        # fetch precalculated word2vec model
+        with open("data/restaurant/w2v_embedding-pickle.pickle", "rb") as myFile:
             w2v_model = pickle.load(myFile)
 
+        with open("data/restaurant/vocab_words.pickle", "rb") as myFile:
+            vocab_words = pickle.load(myFile)
+
+        with open("data/restaurant/vocab_embeddings.pickle", "rb") as myFile:
+            vocab_embeddings = pickle.load(myFile)
+
     else:
+        if Path("data/" + model_file_name).is_file():
 
-        assert isinstance(params, dict), "missing w2v_model params"
+            print("using pre-calculated w2v model")
+            with open("data/" + model_file_name, "rb") as myFile:
+                w2v_model = pickle.load(myFile)
 
-        assert {'min_c', 'win', 'negative', 'seed'}.issubset(params.keys()), (
-            "missing w2v_model params, need: min_c', 'win', 'negative',', 'seed'")
+        else:
 
-        w2v_model = create_w2v_model(processed_data, **params)
-        with open("data/" + model_file_name, "wb") as myFile:
-            pickle.dump(w2v_model, myFile)
+            assert isinstance(params, dict), "missing w2v_model params"
 
-    # vocab_words and vocab_embeddings are sorted like vocab
-    vocab_words = [w for w in vocab if w in w2v_model.wv.index_to_key]
-    vocab_embeddings = [w2v_model.wv.vectors[w2v_model.wv.key_to_index[w]]
-                        for w in vocab_words]
+            assert {'min_c', 'win', 'negative', 'seed'}.issubset(params.keys()), (
+                "missing w2v_model params, need: min_c', 'win', 'negative',', 'seed'")
 
+            w2v_model = create_w2v_model(processed_data, **params)
+            with open("data/" + model_file_name, "wb") as myFile:
+                pickle.dump(w2v_model, myFile)
+
+        # vocab_words and vocab_embeddings are sorted like vocab
+        vocab_words = [w for w in vocab if w in w2v_model.wv.index_to_key]
+        vocab_embeddings = [w2v_model.wv.vectors[w2v_model.wv.key_to_index[w]]
+                            for w in vocab_words]
     return vocab_words, vocab_embeddings, w2v_model
 
 
-def get_vocabulary_embeddings(training_data_processed: list, vocab: list, topic_model: str, model_file_name: str,) \
-        -> Tuple[list, list, Word2Vec]:
+def get_vocabulary_embeddings(training_data_processed: list, vocab: list, topic_model: str, model_file_name: str,
+                              data_set_name: str) -> Tuple[list, list, Word2Vec]:
     """
     get_vocabulary_embeddings fetches the word embeddings of all relevant vocabulary words
 
@@ -106,6 +118,7 @@ def get_vocabulary_embeddings(training_data_processed: list, vocab: list, topic_
     :param vocab: list of vocabulary words, calculated in preprocessing
     :param topic_model: name of the topic modelling approach
     :param model_file_name: name of the saved topic model
+    :param data_set_name: name of the preprocessed data set used
     :return:
         - vocab_words - list of vocabulary words
         - vocab_embeddings - list of embeddings for the vocabulary words
@@ -122,7 +135,8 @@ def get_vocabulary_embeddings(training_data_processed: list, vocab: list, topic_
         assert topic_model == "baseline"
         w2v_params = w2v_params_baseline
 
-    return get_word_vectors(training_data_processed, vocab, model_file_name=model_file_name, params=w2v_params)
+    return get_word_vectors(training_data_processed, vocab, model_file_name=model_file_name, params=w2v_params,
+                            data_set_name=data_set_name)
 
 
 def get_topic_vector(topic_embeddings: list) -> np.ndarray:

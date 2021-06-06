@@ -75,7 +75,7 @@ def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, pa
 
     if data_set_name == "CRR":
         # fetch precalculated word2vec model
-        with open("data/restaurant/w2v_embedding-pickle.pickle", "rb") as myFile:
+        with open("data/restaurant/w2v_model.pickle", "rb") as myFile:
             w2v_model = pickle.load(myFile)
 
         with open("data/restaurant/vocab_words.pickle", "rb") as myFile:

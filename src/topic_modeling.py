@@ -25,7 +25,7 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
     :param topic_vector_flag: flag used to switch between TVS model and RRW and, default: False (RRW model)
 
     """
-    assert data_set_name in ["JN", "FP"]
+    assert data_set_name in ["MUSE", "CRR"]
 
     # set weighting strategies
     clustering_weight_type = 'tf'

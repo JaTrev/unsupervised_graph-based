@@ -79,7 +79,7 @@ def create_networkx_graph(words: list, word_embeddings: list, similarity_thresho
         sim_i_sorted_index = sorted(range(len(i_sim_vector)), key=i_sim_vector.__getitem__, reverse=True)
 
         # if method == "using_top_n":
-        j_indices = sim_i_sorted_index[:10]
+        j_indices = sim_i_sorted_index[:top_n]
         # else: j_indices = sim_i_sorted_index
 
         # iterate over all relevant adjacent nodes

@@ -1,4 +1,4 @@
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, AgglomerativeClustering
 from src.misc import *
 import numpy as np
 import hdbscan
@@ -17,6 +17,20 @@ def k_means_clustering(word_embeddings: list, word_weights: list = None, params:
     :return: list of labels
     """
     model = KMeans(**params)
+    return model.fit_predict(word_embeddings, word_weights)
+
+
+def agglomerative_clustering(word_embeddings: list, word_weights: list = None, params: dict = None) -> list:
+    """
+    agglomerative_clustering performs Agglomerative clustering on the given word_embeddings
+
+    :param word_embeddings: list of word embeddings
+    :param word_weights: list of word weights, for weighted clustering
+    :param params: cluster parameters
+
+    :return: list of labels
+    """
+    model = AgglomerativeClustering(**params)
     return model.fit_predict(word_embeddings, word_weights)
 
 
@@ -136,13 +150,14 @@ def get_word_clusters(processed_docs: list, words: list, word_embeddings: list, 
     # :param n_words: number of words for every cluster
 
     assert len(word_embeddings) == len(words), "word_embeddings and word list do not have the same length"
-    assert clustering_type in ['K-Means'], "incorrect clustering_type"
+    assert clustering_type in ['K-Means', 'Agglomerative'], "incorrect clustering_type"
     assert all([w in vocab for w in words]), "some words are not in the vocabulary"
 
     start_time = time.process_time()
 
     clustering_dict = {
         'K-Means': k_means_clustering,
+        'Agglomerative': agglomerative_clustering
     }
 
     if clustering_weight_type is None:

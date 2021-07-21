@@ -1,4 +1,6 @@
 import networkx as nx
+import numpy as np
+
 from src.misc import *
 import time
 
@@ -19,7 +21,6 @@ def remove_edges(graph: nx.Graph, edge_weights: list, percentile_cutoff: int, re
     """
     # remove edges that do not have a high enough similarity score
     min_cutoff_value = np.percentile(edge_weights, percentile_cutoff)
-    # min(heapq.nlargest(percentile_cutoff, edge_weights))
 
     graph_edge_weights = nx.get_edge_attributes(graph, "weight")
 
@@ -37,6 +38,97 @@ def remove_edges(graph: nx.Graph, edge_weights: list, percentile_cutoff: int, re
         graph.remove_nodes_from(list(nx.isolates(graph)))
 
     return graph
+
+
+def create_networkx_graph_2(words: list, word_embeddings: list, similarity_threshold: float = 0.4,
+                          percentile_cutoff: int = 70, remove_isolated_nodes: bool = True,
+                          method: str = "using_cutoff", top_n: int = 10) -> Tuple[nx.Graph, float]:
+    """
+    create_networkx_graph creates a graph given the words and their embeddings
+
+    :param words: list of words which will be the nodes
+    :param word_embeddings: embeddings of the words
+    :param similarity_threshold: cosine similarity threshold value for the edges
+    :param percentile_cutoff: percentile threshold value
+    :param remove_isolated_nodes: boolean indicating if isolated nodes should be removed
+    :param method: method used to trim the original graph
+    :param top_n: is method is "using_top_n" then only the top_n highest weighted edges of each node is used
+
+    :return:
+        - word embedding graph
+        - graph creation time
+    """
+    assert len(words) == len(word_embeddings), "words and word_embeddings must have the same length"
+    assert method in ["using_top_n", "using_cutoff"]
+    number_of_embeddings = len(word_embeddings)
+    if method == "using_cutoff":
+        assert top_n < number_of_embeddings
+
+    print("here 0")
+    temp_sim_matrix = cosine_similarity(word_embeddings, word_embeddings)
+    sim_matrix = [[sim if similarity_threshold < sim < 1 else np.NaN for sim in sim_vec]
+                  for sim_vec in temp_sim_matrix]
+
+    # sim_matrix = [[cosine_similarity(i_emb.reshape(1, -1), j_emb.reshape(1, -1))if i != j
+    # else np.nan for j, j_emb in enumerate(word_embeddings)]for i, i_emb in enumerate(word_embeddings)]
+
+    # create undirected graph
+    graph = nx.Graph()
+
+    start_time = time.process_time()
+
+    similarity_sorted_indexes_matrix = [sorted(range(number_of_embeddings),
+                                               key=sim_matrix[i].__getitem__,
+                                               reverse=True)
+                                        for i in range(number_of_embeddings)
+                                        ]
+
+    if method == "using_top_n":
+        # get top n indexes for each node i
+        j_indexes_matrix = [similarity_sorted_indexes_matrix[i][:top_n+1] for i in range(number_of_embeddings)]
+
+    else:
+        # method == "using_cutoff"
+
+        # get percentile value for all edges
+        # i_percentile_value = np.nanpercentile(sim_matrix, percentile_cutoff, axis=1)
+        percentile_value = np.nanpercentile(sim_matrix, percentile_cutoff)
+
+        j_indexes_matrix = [[j for j in range(number_of_embeddings)
+                             if sim_matrix[i][j] > percentile_value and i != j]
+                            for i in range(number_of_embeddings)]
+    print("here 2")
+    # create graph by adding edges and nodes
+    for i in range(number_of_embeddings):
+        for j in j_indexes_matrix[i]:
+
+            if j == i:
+                continue
+
+            word_i = words[i]
+            word_j = words[j]
+            sim = sim_matrix[i][j]
+
+            # check if the edge already exists
+            if graph.has_edge(word_j, word_i):
+
+                # the edge already exists
+                old_weight = graph.get_edge_data(word_j, word_i, "weight")['weight']
+                print("old weight: " + str(old_weight))
+
+                # remove edge if the old similarity score is lower than the new one
+                if old_weight < sim:
+                    graph.remove_edge(word_j, word_i)
+                    # add new edge
+                    graph.add_edge(word_i, word_j, weight=float(sim))
+
+            else:
+                # edge does not already exist -> add new edge
+                graph.add_edge(word_i, word_j, weight=float(sim))
+
+    graph_creation_time = time.process_time() - start_time
+
+    return graph, graph_creation_time
 
 
 def create_networkx_graph(words: list, word_embeddings: list, similarity_threshold: float = 0.4,
@@ -78,9 +170,10 @@ def create_networkx_graph(words: list, word_embeddings: list, similarity_thresho
         i_sim_vector = sim_matrix[i]
         sim_i_sorted_index = sorted(range(len(i_sim_vector)), key=i_sim_vector.__getitem__, reverse=True)
 
-        # if method == "using_top_n":
-        j_indices = sim_i_sorted_index[:top_n]
-        # else: j_indices = sim_i_sorted_index
+        if method == "using_top_n":
+            j_indices = sim_i_sorted_index[:top_n]
+        else:
+            j_indices = sim_i_sorted_index[:100]
 
         # iterate over all relevant adjacent nodes
         for j in j_indices:

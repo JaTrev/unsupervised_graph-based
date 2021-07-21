@@ -141,7 +141,7 @@ def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list
                       execution_time=execution_times,
                       number_of_nodes=[-1 for _ in range(len(y_topics["K-Means"]))],
                       filename_prefix=filename_prefix,
-                      model_dbs_scores=y_dbs_model, x_label="Percentile Cutoff")
+                      model_dbs_scores=y_dbs_model, x_label="Number of Topics")
 
 
 def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, test_tokenized_segments: list,
@@ -166,7 +166,6 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
                                                                          model_file_name="w2v_model-k_components-"
                                                                                          + data_set_name + ".pickle",
                                                                          data_set_name=data_set_name)
-
     # dictionary used to save topic model scores
     y_topics = {"K=1": [], "K=2": [], "K=3": []}
     y_c_v_model = {"K=1": [], "K=2": [], "K=3": []}
@@ -274,9 +273,7 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
 
             y_umass_model[k_component].append(cs_u_mass)
             test_y_umass_model[k_component].append(cs_u_mass_test)
-
             execution_times[k_component].append(k_components_time + graph_creation_time)
-
     save_model_scores(x_values=x, models=list(y_topics.keys()), model_topics=y_topics, model_c_v_scores=y_c_v_model,
                       model_npmi_scores=y_npmi_model, model_c_v_test_scores=test_y_c_v_model,
                       model_npmi_test_scores=test_y_npmi_model,

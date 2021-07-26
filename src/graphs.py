@@ -64,13 +64,9 @@ def create_networkx_graph_2(words: list, word_embeddings: list, similarity_thres
     if method == "using_cutoff":
         assert top_n < number_of_embeddings
 
-    print("here 0")
     temp_sim_matrix = cosine_similarity(word_embeddings, word_embeddings)
     sim_matrix = [[sim if similarity_threshold < sim < 1 else np.NaN for sim in sim_vec]
                   for sim_vec in temp_sim_matrix]
-
-    # sim_matrix = [[cosine_similarity(i_emb.reshape(1, -1), j_emb.reshape(1, -1))if i != j
-    # else np.nan for j, j_emb in enumerate(word_embeddings)]for i, i_emb in enumerate(word_embeddings)]
 
     # create undirected graph
     graph = nx.Graph()
@@ -97,7 +93,7 @@ def create_networkx_graph_2(words: list, word_embeddings: list, similarity_thres
         j_indexes_matrix = [[j for j in range(number_of_embeddings)
                              if sim_matrix[i][j] > percentile_value and i != j]
                             for i in range(number_of_embeddings)]
-    print("here 2")
+
     # create graph by adding edges and nodes
     for i in range(number_of_embeddings):
         for j in j_indexes_matrix[i]:
@@ -114,7 +110,6 @@ def create_networkx_graph_2(words: list, word_embeddings: list, similarity_thres
 
                 # the edge already exists
                 old_weight = graph.get_edge_data(word_j, word_i, "weight")['weight']
-                print("old weight: " + str(old_weight))
 
                 # remove edge if the old similarity score is lower than the new one
                 if old_weight < sim:

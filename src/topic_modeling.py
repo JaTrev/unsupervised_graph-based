@@ -3,10 +3,74 @@ from src.clustering import *
 from src.graphs import *
 from src.misc import save_model_scores
 from networkx.algorithms import approximation as approx
+from gensim.models import LdaModel
+
 import time
 
 w2v_params = {"min_c": 10, "win": 7, "negative": 0, "sample": 1e-5, "hs": 1, "epochs": 400, "sg": 1, 'seed': 42,
               'ns_exponent': 0.75}
+
+
+def lda_topics(processed_data: list, tokenized_docs: list, test_tokenized_segments: list,
+               max_iter: int = 50, n_words: int = 10):
+    """
+    lda_topics performs LDA topic modeling on the input data
+
+    :param processed_data: list of preprocessed segments
+    :param max_iter: max. number of iterations
+    :param n_words: number of topic representatives
+
+    :return:
+        - topics - list of topics (and their representatives
+        - doc_topics - list of predicted topics, one for each segment
+    """
+
+    dictionary = corpora.Dictionary(processed_data)
+    bow_corpus = [dictionary.doc2bow(doc) for doc in processed_data]
+
+    # Alpha parameter
+    alpha = [0.1, 'asymmetric']
+    # Beta parameter
+    beta = list(np.arange(0.1, 1.3, 0.3))
+    # number of topics parameter
+    topics_range = range(8, 14, 2)
+
+    best_c_v = 0
+
+    for num_topics in topics_range:
+
+        for a in alpha:
+
+            for b in beta:
+
+                # calculate LDA model
+                lda_model = LdaModel(bow_corpus, id2word=dictionary, num_topics=num_topics,
+                                     random_state=42, iterations=max_iter,
+                                     passes=5, alpha=a, eta=b, per_word_topics=True)
+
+                # get topics
+                topics_words = []
+                for i_t in range(num_topics):
+                    topic = [lda_model.id2word[w_id] for w_id, _ in lda_model.get_topic_terms(i_t, topn=n_words)]
+                    topics_words.append(topic)
+
+                # calculate coherence scores
+                c_v = get_coherence_score(tokenized_docs, topics_words)
+                test_c_v = get_coherence_score(test_tokenized_segments, topics_words)
+
+                if c_v > best_c_v:
+
+                    print("num_topics: " + str(num_topics))
+                    print("a: " + str(a))
+                    print("b: " + str(b))
+                    print("c_v : " + str(c_v))
+                    print("test c_v: " + str(test_c_v))
+                    print(topics_words)
+                    print("---------------")
+                    print()
+
+                    best_c_v = c_v
+    return
 
 
 def word2vec_topic_model(data_processed: list, vocab: list, tokenized_docs: list, test_tokenized_segments: list,

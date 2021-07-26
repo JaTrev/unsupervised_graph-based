@@ -27,7 +27,10 @@ def main_fct(data_set: str, topic_model_type: str, raw_data: list, raw_labels: l
         test_tokenized_docs = None
 
     # perform topi modeling based on topic_model_type
-    if topic_model_type == "RRW":
+    if topic_model_type == "LDA":
+        lda_topics(data_processed, tokenized_docs, test_tokenized_docs)
+
+    elif topic_model_type == "RRW":
         word2vec_topic_model(data_processed, vocab, tokenized_docs, test_tokenized_docs,
                              data_set_name=data_set, topic_vector_flag=False)
 
@@ -59,8 +62,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     assert args.data_set in ["MUSE", "CRR"], "name the data set you want to use ('MUSE' or 'CRR')"
-    assert args.topic_model in ['RRW', 'TVS', 'k-components'], (
-        "select one of the topic models: ['RRW', 'TVS', 'k-components']")
+    assert args.topic_model in ['RRW', 'TVS', 'k-components', 'LDA'], (
+        "select one of the topic models: ['RRW', 'TVS', 'k-components', 'LDA]")
 
     filtered_data, filtered_data_labels, filtered_test_data, filtered_test_data_labels = get_data(
             data_set=args.data_set, get_test_data=args.do_testing)

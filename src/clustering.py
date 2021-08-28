@@ -161,8 +161,8 @@ def get_word_clusters(processed_docs: list, words: list, word_embeddings: list, 
     }
 
     if clustering_weight_type is None:
-        print("Performing clustering without any weights!")
 
+        print("Performing clustering without any weights!")
         word_weights = None
 
     else:

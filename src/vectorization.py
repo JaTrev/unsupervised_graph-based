@@ -87,7 +87,6 @@ def get_word_vectors(processed_data: list, vocab: list, model_file_name: str, pa
     else:
         if Path("data/" + model_file_name).is_file():
 
-            print("using pre-calculated w2v model")
             with open("data/" + model_file_name, "rb") as myFile:
                 w2v_model = pickle.load(myFile)
 

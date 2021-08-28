@@ -225,11 +225,17 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
     n_words = len([w for d in data_processed for w in d])
     word_weights = get_word_weights(data_processed, vocab, n_words, weight_type='tf')
 
+    """
     vocab_words, vocab_embeddings, w2v_model = get_vocabulary_embeddings(data_processed, vocab,
                                                                          topic_model="k-components",
                                                                          model_file_name="w2v_model-k_components-"
                                                                                          + data_set_name + ".pickle",
                                                                          data_set_name=data_set_name)
+    """
+    vocab_words, vocab_embeddings, w2v_model = get_vocabulary_embeddings(
+        data_processed, vocab, topic_model="baseline", model_file_name="w2v_model-" + data_set_name + ".pickle",
+        data_set_name=data_set_name)
+
     # dictionary used to save topic model scores
     y_topics = {"K=1": [], "K=2": [], "K=3": []}
     y_c_v_model = {"K=1": [], "K=2": [], "K=3": []}
@@ -255,7 +261,6 @@ def k_components_model(data_processed: list, vocab: list, tokenized_docs: list, 
         graph, graph_creation_time = create_networkx_graph(vocab_words, vocab_embeddings,
                                                            similarity_threshold=0.8, percentile_cutoff=sim)
 
-        print("number of nodes: " + str(graph.number_of_nodes()))
         number_of_nodes.append(graph.number_of_nodes())
 
         # calculate the k-components
